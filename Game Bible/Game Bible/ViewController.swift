@@ -8,7 +8,9 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+var gameNames = ["BlackJack", "Crazy Eights", "Dominos", "Go Fish", "War"]
+
+class ViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
 
     override func viewDidLoad() {
         super.viewDidLoad()

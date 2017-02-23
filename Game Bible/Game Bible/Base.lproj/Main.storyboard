@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="c3J-JF-9sr">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -9,24 +9,6 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
-        <scene sceneID="AQf-qs-eI6">
-            <objects>
-                <viewController id="BSo-a3-vDK" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="YYc-CG-41K"/>
-                        <viewControllerLayoutGuide type="bottom" id="ruc-cf-V2z"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="n7k-1t-3Ct">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="ofu-mM-IH2" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-858" y="87"/>
-        </scene>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
@@ -81,40 +63,54 @@
             <point key="canvasLocation" x="136.80000000000001" y="138.98050974512745"/>
         </scene>
         <!--View Controller-->
-        <scene sceneID="HHX-uT-fFU">
+        <scene sceneID="EST-G7-E7T">
             <objects>
-                <viewController id="eAX-Y4-rOg" sceneMemberID="viewController">
+                <viewController id="c3J-JF-9sr" customClass="ViewController" customModule="ISU" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="rxD-rA-7HP"/>
-                        <viewControllerLayoutGuide type="bottom" id="Ggz-vE-LHq"/>
+                        <viewControllerLayoutGuide type="top" id="j9N-Q9-jpX"/>
+                        <viewControllerLayoutGuide type="bottom" id="9WW-LD-6XG"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="lBr-Wp-RaT">
+                    <view key="view" contentMode="scaleToFill" id="0gf-ug-nNl">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Game Bible" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b4Z-mk-49o">
+                                <rect key="frame" x="91" y="59" width="192" height="51"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" weight="ultraLight" pointSize="41"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tMf-Jd-wXG">
+                                <rect key="frame" x="172" y="247" width="30" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fw6-BE-A3p">
+                                <rect key="frame" x="172" y="364" width="30" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" spacing="100" translatesAutoresizingMaskIntoConstraints="NO" id="IdT-eu-2sN">
+                                <rect key="frame" x="125" y="299" width="124" height="160"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zre-Ad-iqd">
+                                        <rect key="frame" x="0.0" y="0.0" width="124" height="30"/>
+                                        <state key="normal" title="Browse All Games"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sz5-WO-64w">
+                                        <rect key="frame" x="0.0" y="130" width="124" height="30"/>
+                                        <state key="normal" title="Filter Search"/>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
+                    <navigationItem key="navigationItem" id="tvO-Ar-XDP"/>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="mLp-IQ-rZA" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aTX-io-Pnn" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1395" y="478"/>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="aU7-b5-7Na">
-            <objects>
-                <viewController id="sN6-nV-f6h" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="ov1-0t-oJV"/>
-                        <viewControllerLayoutGuide type="bottom" id="MEC-BP-0j8"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="3Sc-Pk-dhW">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="ljx-Hf-Erf" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="104" y="970"/>
+            <point key="canvasLocation" x="-916" y="195"/>
         </scene>
     </scenes>
 </document>

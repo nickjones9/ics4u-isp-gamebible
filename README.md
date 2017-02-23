@@ -39,7 +39,7 @@ The search feature will be a key factor in this application. If the user wants t
 
 *Have you seen another application that you wish to improve on? Has someone asked you to create this?*
 
-Almost every successful application available in the App Store has a multi-view user interface. I would like to be able to create my own multi- view applications, and the best way to learn is to do. So, this will be a sort of "template" and "Guinea pig" for my future multi-view applications. 
+Almost every successful application available in the App Store has a multi-view user interface. I would like to be able to create my own multi- view applications, and the best way to learn is to do. So, this will be a sort of "template" and "guinea pig" for my future multi-view applications. 
 
 I have not yet found an application that is very similar to my idea. Honestly, I do not think this is a million-dollar app idea, but creating this app is more about learning than to creat the next big app. So, even if there was a similar application idea to mine, I would still be able to reach my goal. 
 
@@ -76,4 +76,10 @@ My biggest challenge in creating this application will be the UI. Getting the UI
 
 *In the section below, sketch out a plan for your application. This is where you will spend the majority of your time in completing the ISP proposal. Think through what you hope to create and as needed, adjust your responses to the questions above.*
 
+The home screen is what the user will be shown when the app is opened. They will then have the option to browse all the games in the app, or to only browse the games playable to them due to their limitations. If "BROWSE ALL GAMES" is selected, the app will open a view with a list of all the games. If the user choses "BROWSE BY FILTER," they will be directed to a screen where they can select their limitations and be refered to a page that displays all the games available for them to play.
 
+![Home](https://github.com/rsgc-jones-n/ics4u-isp-gamebible/blob/master/Game%20Bible/Home%20&%20Browse.png?raw=true)
+
+After the user selects a game they would like to open, a gave view will be displayed customised to the game rhey selected. the game view will include the required materials and players, a discriptiom of the game, the rules and possibly other features like a video explaination etc. All of these different views will have back buttons so that the user will be able to easily navigate through the pages. 
+
+![Game](https://github.com/rsgc-jones-n/ics4u-isp-gamebible/blob/master/Game%20Bible/Game.png?raw=true)

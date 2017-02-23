@@ -29,11 +29,11 @@
                                         <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="58N-tV-ZyB" id="RYg-l3-tIb">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="wki-oF-QXX">
-                                                    <rect key="frame" x="15" y="0.0" width="345" height="43.5"/>
+                                                    <rect key="frame" x="15" y="0.0" width="345" height="43"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
@@ -61,6 +61,9 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="All Games" id="iht-yS-MVJ"/>
+                    <connections>
+                        <outlet property="tableView" destination="bcb-1N-32H" id="Afc-7B-hUP"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -96,7 +99,7 @@
         <!--View Controller-->
         <scene sceneID="EST-G7-E7T">
             <objects>
-                <viewController id="c3J-JF-9sr" customClass="ViewController" customModule="ISU" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="c3J-JF-9sr" customClass="ViewController" customModule="Game_Bible" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="j9N-Q9-jpX"/>
                         <viewControllerLayoutGuide type="bottom" id="9WW-LD-6XG"/>

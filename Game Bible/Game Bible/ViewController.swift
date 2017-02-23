@@ -8,13 +8,21 @@
 
 import UIKit
 
-var gameNames = ["BlackJack", "Crazy Eights", "Dominos", "Go Fish", "War"]
-
 class ViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
 
+    @IBOutlet weak var tableView: UITableView!
+    
+    var currentlySelectedRow : IndexPath = IndexPath(item: 0, section: 0)
+    
+    var gameNames = ["BlackJack", "Crazy Eights", "Dominos", "Go Fish", "War"]
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        tableView.deselectRow(at: currentlySelectedRow, animated: true)
     }
 
     override func didReceiveMemoryWarning() {
@@ -40,6 +48,10 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         cell.textLabel?.text = gameNames[indexPath.row]
         
         return cell
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        currentlySelectedRow = indexPath
     }
     
 }

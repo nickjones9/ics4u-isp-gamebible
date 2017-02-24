@@ -12,8 +12,6 @@ class GameTableViewController: UIViewController, UITableViewDataSource, UITableV
 
     @IBOutlet weak var tableView: UITableView!
     
-    var currentlySelectedRow : IndexPath = IndexPath(item: 0, section: 0)
-    
     var gameNames = ["BlackJack", "Crazy Eights", "Dominos", "Go Fish", "War"]
     
     override func viewDidLoad() {
@@ -21,7 +19,9 @@ class GameTableViewController: UIViewController, UITableViewDataSource, UITableV
     }
     
     override func viewDidAppear(_ animated: Bool) {
-        tableView.deselectRow(at: currentlySelectedRow, animated: true)
+        if let selectedRow = tableView.indexPathForSelectedRow {
+            tableView.deselectRow(at: selectedRow, animated: true)
+        }
     }
 
     override func didReceiveMemoryWarning() {
@@ -57,10 +57,6 @@ class GameTableViewController: UIViewController, UITableViewDataSource, UITableV
         cell.textLabel?.text = gameNames[indexPath.row]
         
         return cell
-    }
-    
-    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        currentlySelectedRow = indexPath
     }
     
 }

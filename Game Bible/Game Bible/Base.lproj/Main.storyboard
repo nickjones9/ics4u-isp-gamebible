@@ -140,6 +140,9 @@
                                     <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sz5-WO-64w">
                                         <rect key="frame" x="0.0" y="130" width="124" height="30"/>
                                         <state key="normal" title="Filter Search"/>
+                                        <connections>
+                                            <segue destination="M5S-rl-8ZY" kind="show" id="rxo-sF-frB"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -169,6 +172,24 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Wgc-If-Cld" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="136.80000000000001" y="138.98050974512745"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="kqH-mN-bCi">
+            <objects>
+                <viewController id="M5S-rl-8ZY" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="41R-aK-YqK"/>
+                        <viewControllerLayoutGuide type="bottom" id="4CG-NL-UGT"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Mqh-Pd-G7y">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2LD-2d-weY" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137" y="895"/>
         </scene>
     </scenes>
 </document>

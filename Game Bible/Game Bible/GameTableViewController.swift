@@ -11,18 +11,27 @@ import UIKit
 class GameTableViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
 
     @IBOutlet weak var tableView: UITableView!
+    @IBOutlet weak var nameLabel: UILabel!
+    @IBOutlet weak var playersLabel: UILabel!
+    @IBOutlet weak var materialsLabel: UILabel!
     
-    var gameNames = ["BlackJack", "Crazy Eights", "Dominos", "Go Fish", "War"]
+    var games:[Game] = [
+        Game(name: "Blackjack", players: "2", description: "XXX", instructions: "XXX", materials: "XXX"),
+        Game(name: "Crazy Eights", players: "2", description: "XXX", instructions: "XXX", materials: "XXX"),
+        Game(name: "Dominos", players: "2", description: "XXX", instructions: "XXX", materials: "XXX"),
+        Game(name: "Go Fish", players: "2", description: "XXX", instructions: "XXX", materials: "XXX"),
+        Game(name: "War", players: "2", description: "XXX", instructions: "XXX", materials: "XXX")
+            ]
     
     override func viewDidLoad() {
         super.viewDidLoad()
     }
     
-    override func viewDidAppear(_ animated: Bool) {
-        if let selectedRow = tableView.indexPathForSelectedRow {
-            tableView.deselectRow(at: selectedRow, animated: true)
-        }
-    }
+//    override func viewDidAppear(_ animated: Bool) {
+//        if let selectedRow = tableView.indexPathForSelectedRow {
+//            tableView.deselectRow(at: tableView.indexPathForSelectedRow, animated: true)
+//        }
+//    }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -37,27 +46,31 @@ class GameTableViewController: UIViewController, UITableViewDataSource, UITableV
         if segue.identifier == "showGameDetail" {
             if let indexPath = tableView.indexPathForSelectedRow {
                 let destinationController = segue.destination as! GameDetailViewController
-                destinationController.gameName = gameNames[indexPath.row]
+                destinationController.game = games[indexPath.row]
             }
         }
     }
     
-    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         
         // Return number of rows in section
-        return gameNames.count
+        return games.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cellIdentifier = "Cell"
-        let cell = tableView.dequeueReusableCell(withIdentifier: cellIdentifier, for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: cellIdentifier, for: indexPath) as! GameDetailTableViewCell
         
-        // Return the cell
-        cell.textLabel?.text = gameNames[indexPath.row]
+        nameLabel.text = games[indexPath.row].name
+        playersLabel.text = games[indexPath.row].players
+        //descriptionLabel.text = games[indexPath.row].description
+        //instructionsLabel.text = games[indexPath.row].instructions
+        materialsLabel.text = games[indexPath.row].materials
+        
+        //accessoryType = games[indexPath.row].isVisited ? .checkmark : .none
         
         return cell
+
     }
-    
 }
 

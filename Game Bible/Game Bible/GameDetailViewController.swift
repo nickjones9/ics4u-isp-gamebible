@@ -10,17 +10,14 @@ import UIKit
 
 class GameDetailViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
-    var gameName = ""
-    //var gameImage
-    //var gameInstructions
-    //var game
+    var game:Game!
     
     @IBOutlet weak var gameNameLabel: UILabel!
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        gameNameLabel.text = gameName
+        gameNameLabel.text = game.name
     }
 
     override func didReceiveMemoryWarning() {
@@ -51,9 +48,11 @@ class GameDetailViewController: UIViewController, UITableViewDataSource, UITable
     case 0:
         cell.fieldLabel.text = "Name"
         cell.valueLabel.text = game.name
+        
     case 1:
         cell.fieldLabel.text = "Players"
         cell.valueLabel.text = game.players
+        
     case 2:
         cell.fieldLabel.text = "Description"
         cell.valueLabel.text = game.description

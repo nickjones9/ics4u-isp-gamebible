@@ -26,24 +26,66 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell" textLabel="wki-oF-QXX" style="IBUITableViewCellStyleDefault" id="58N-tV-ZyB">
-                                        <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" rowHeight="80" id="t89-Dy-gfQ" customClass="RestaurantTableViewCell" customModule="Game_Bible" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="80"/>
                                         <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="58N-tV-ZyB" id="RYg-l3-tIb">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="t89-Dy-gfQ" id="sZs-pM-g81">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="79"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="wki-oF-QXX">
-                                                    <rect key="frame" x="15" y="0.0" width="345" height="43"/>
-                                                    <autoresizingMask key="autoresizingMask"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <nil key="textColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
+                                                <stackView opaque="NO" contentMode="scaleToFill" alignment="top" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Rpd-0B-HIe">
+                                                    <rect key="frame" x="14" y="10" width="353" height="60"/>
+                                                    <subviews>
+                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="wc2-3z-M2g">
+                                                            <rect key="frame" x="0.0" y="0.0" width="60" height="60"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="width" constant="60" id="81Y-Z1-GmS"/>
+                                                                <constraint firstAttribute="height" constant="60" id="oFi-64-gaZ"/>
+                                                            </constraints>
+                                                            <userDefinedRuntimeAttributes>
+                                                                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                                    <integer key="value" value="30"/>
+                                                                </userDefinedRuntimeAttribute>
+                                                            </userDefinedRuntimeAttributes>
+                                                        </imageView>
+                                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="aAE-q3-qqe">
+                                                            <rect key="frame" x="70" y="0.0" width="283" height="56"/>
+                                                            <subviews>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ISm-9G-rHd">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="283" height="21"/>
+                                                                    <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                                                    <nil key="textColor"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Players" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yCU-sB-jjB" userLabel="Players Label">
+                                                                    <rect key="frame" x="0.0" y="22" width="283" height="17"/>
+                                                                    <fontDescription key="fontDescription" type="system" weight="light" pointSize="14"/>
+                                                                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Materials" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wiT-f3-rgJ" userLabel="Materials Label">
+                                                                    <rect key="frame" x="0.0" y="40" width="283" height="16"/>
+                                                                    <fontDescription key="fontDescription" type="system" weight="light" pointSize="13"/>
+                                                                    <nil key="textColor"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                            </subviews>
+                                                        </stackView>
+                                                    </subviews>
+                                                </stackView>
                                             </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="bottomMargin" secondItem="Rpd-0B-HIe" secondAttribute="bottom" constant="1.5" id="NMV-1k-h3j"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="Rpd-0B-HIe" secondAttribute="trailing" id="aX9-h9-kSs"/>
+                                                <constraint firstItem="Rpd-0B-HIe" firstAttribute="leading" secondItem="sZs-pM-g81" secondAttribute="leadingMargin" constant="6" id="paO-m0-q3l"/>
+                                                <constraint firstItem="Rpd-0B-HIe" firstAttribute="top" secondItem="sZs-pM-g81" secondAttribute="topMargin" constant="2" id="qad-mM-NXo"/>
+                                            </constraints>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <segue destination="9QZ-L9-3TB" kind="show" identifier="showGameDetail" id="7BG-2U-dmG"/>
+                                            <outlet property="locationLabel" destination="yCU-sB-jjB" id="YTo-k0-m35"/>
+                                            <outlet property="nameLabel" destination="ISm-9G-rHd" id="Sez-vH-Hgg"/>
+                                            <outlet property="thumbnailImageView" destination="wc2-3z-M2g" id="IGF-dK-CEB"/>
+                                            <outlet property="typeLabel" destination="wiT-f3-rgJ" id="LmH-dJ-vS8"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -63,6 +105,9 @@
                     </view>
                     <navigationItem key="navigationItem" title="All Games" id="iht-yS-MVJ"/>
                     <connections>
+                        <outlet property="materialsLAbel" destination="wiT-f3-rgJ" id="Die-Gg-BS0"/>
+                        <outlet property="nameLabel" destination="ISm-9G-rHd" id="ruM-pX-4LA"/>
+                        <outlet property="playersLabel" destination="yCU-sB-jjB" id="Ycx-cl-64s"/>
                         <outlet property="tableView" destination="bcb-1N-32H" id="Afc-7B-hUP"/>
                     </connections>
                 </viewController>
@@ -86,7 +131,7 @@
                                 <rect key="frame" x="0.0" y="-8" width="375" height="667"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <label key="tableHeaderView" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Game Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="NqW-7h-hLk">
-                                    <rect key="frame" x="0.0" y="64" width="375" height="51"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="51"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     <fontDescription key="fontDescription" type="system" weight="ultraLight" pointSize="41"/>
                                     <nil key="textColor"/>

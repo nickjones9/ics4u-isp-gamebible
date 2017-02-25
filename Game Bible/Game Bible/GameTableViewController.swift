@@ -11,9 +11,6 @@ import UIKit
 class GameTableViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
 
     @IBOutlet weak var tableView: UITableView!
-    @IBOutlet weak var nameLabel: UILabel!
-    @IBOutlet weak var playersLabel: UILabel!
-    @IBOutlet weak var materialsLabel: UILabel!
     
     var games:[Game] = [
         Game(name: "Blackjack", players: "2", description: "XXX", instructions: "XXX", materials: "XXX"),
@@ -59,15 +56,13 @@ class GameTableViewController: UIViewController, UITableViewDataSource, UITableV
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cellIdentifier = "Cell"
-        let cell = tableView.dequeueReusableCell(withIdentifier: cellIdentifier, for: indexPath) as! GameDetailTableViewCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: cellIdentifier, for: indexPath) as! GameTableViewCell
         
-        nameLabel.text = games[indexPath.row].name
-        playersLabel.text = games[indexPath.row].players
+        cell.nameLabel.text = games[indexPath.row].name
+        cell.playersLabel.text = games[indexPath.row].players
         //descriptionLabel.text = games[indexPath.row].description
         //instructionsLabel.text = games[indexPath.row].instructions
-        materialsLabel.text = games[indexPath.row].materials
-        
-        //accessoryType = games[indexPath.row].isVisited ? .checkmark : .none
+        cell.materialsLabel.text = games[indexPath.row].materials
         
         return cell
 

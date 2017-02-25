@@ -19,6 +19,7 @@
 		F60F4DD71E522AE4000594FD /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = F60F4DD61E522AE4000594FD /* README.md */; };
 		F60F4DD91E522B02000594FD /* Home & Browse.png in Resources */ = {isa = PBXBuildFile; fileRef = F60F4DD81E522B02000594FD /* Home & Browse.png */; };
 		F60F4DDB1E522B0C000594FD /* Game.png in Resources */ = {isa = PBXBuildFile; fileRef = F60F4DDA1E522B0C000594FD /* Game.png */; };
+		F6AE9E221E622AFD00663261 /* GameTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6AE9E211E622AFD00663261 /* GameTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,7 @@
 		F60F4DD61E522AE4000594FD /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		F60F4DD81E522B02000594FD /* Home & Browse.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Home & Browse.png"; sourceTree = "<group>"; };
 		F60F4DDA1E522B0C000594FD /* Game.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Game.png; sourceTree = "<group>"; };
+		F6AE9E211E622AFD00663261 /* GameTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,16 +71,17 @@
 		F60F4DC01E51F761000594FD /* Game Bible */ = {
 			isa = PBXGroup;
 			children = (
+				F60F4DC51E51F761000594FD /* Main.storyboard */,
+				F60F4DCA1E51F761000594FD /* LaunchScreen.storyboard */,
+				F60F4DC81E51F761000594FD /* Assets.xcassets */,
 				F60F4DC11E51F761000594FD /* AppDelegate.swift */,
 				F60F4DC31E51F761000594FD /* GameTableViewController.swift */,
-				F60F4DC51E51F761000594FD /* Main.storyboard */,
-				F60F4DC81E51F761000594FD /* Assets.xcassets */,
-				F60F4DCA1E51F761000594FD /* LaunchScreen.storyboard */,
-				F60F4DCD1E51F761000594FD /* Info.plist */,
 				F60E05481E5F819D004E3C45 /* GameDetailViewController.swift */,
+				F6AE9E211E622AFD00663261 /* GameTableViewCell.swift */,
 				F60E054A1E60B6CE004E3C45 /* FilterTableViewTableViewController.swift */,
 				F60E054C1E611FBF004E3C45 /* GameDetailTableViewCell.swift */,
 				F60E054E1E6128EE004E3C45 /* Game.swift */,
+				F60F4DCD1E51F761000594FD /* Info.plist */,
 			);
 			path = "Game Bible";
 			sourceTree = "<group>";
@@ -174,6 +177,7 @@
 				F60F4DC41E51F761000594FD /* GameTableViewController.swift in Sources */,
 				F60E054F1E6128EE004E3C45 /* Game.swift in Sources */,
 				F60F4DC21E51F761000594FD /* AppDelegate.swift in Sources */,
+				F6AE9E221E622AFD00663261 /* GameTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

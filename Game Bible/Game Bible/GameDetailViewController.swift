@@ -8,7 +8,7 @@
 
 import UIKit
 
-class GameDetailViewController: UIViewController {
+class GameDetailViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
     var gameName = ""
     //var gameImage
@@ -37,5 +37,36 @@ class GameDetailViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 4
+    }
 
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath) as! GameDetailTableViewCell
+    
+    // Configure the cell...
+    switch indexPath.row {
+    case 0:
+        cell.fieldLabel.text = "Name"
+        cell.valueLabel.text = game.name
+    case 1:
+        cell.fieldLabel.text = "Players"
+        cell.valueLabel.text = game.players
+    case 2:
+        cell.fieldLabel.text = "Description"
+        cell.valueLabel.text = game.description
+        
+    case 3:
+        cell.fieldLabel.text = "Instructions"
+        cell.valueLabel.text = game.instructions
+        
+    default:
+        cell.fieldLabel.text = "Default Field"
+        cell.valueLabel.text = "Default Value"
+        
+    }
+        return cell
+    }
 }

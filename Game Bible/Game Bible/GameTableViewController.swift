@@ -24,11 +24,11 @@ class GameTableViewController: UIViewController, UITableViewDataSource, UITableV
         super.viewDidLoad()
     }
     
-//    override func viewDidAppear(_ animated: Bool) {
-//        if let selectedRow = tableView.indexPathForSelectedRow {
-//            tableView.deselectRow(at: tableView.indexPathForSelectedRow, animated: true)
-//        }
-//    }
+    override func viewDidAppear(_ animated: Bool) {
+        if let selectedRow = tableView.indexPathForSelectedRow {
+            tableView.deselectRow(at: tableView.indexPathForSelectedRow!, animated: true)
+        }
+    }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

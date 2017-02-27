@@ -13,7 +13,7 @@ class GameTableViewController: UIViewController, UITableViewDataSource, UITableV
     @IBOutlet weak var tableView: UITableView!
     
     var games:[Game] = [
-        Game(name: "Blackjack", players: "2", description: "XXX", instructions: "XXX", materials: "XXX"),
+        Game(name: "Blackjack", players: "2-6 Players, 1 Dealer", description: "In blackjack...", instructions: "To play blackjack...", materials: "Card Deck, Poker Chips"),
         Game(name: "Crazy Eights", players: "2", description: "XXX", instructions: "XXX", materials: "XXX"),
         Game(name: "Dominos", players: "2", description: "XXX", instructions: "XXX", materials: "XXX"),
         Game(name: "Go Fish", players: "2", description: "XXX", instructions: "XXX", materials: "XXX"),

@@ -103,7 +103,13 @@
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="bcb-1N-32H" secondAttribute="bottom" id="xUs-oC-0pH"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="All Games" id="iht-yS-MVJ"/>
+                    <navigationItem key="navigationItem" title="All Games" id="iht-yS-MVJ">
+                        <barButtonItem key="leftBarButtonItem" style="plain" systemItem="cancel" id="K9G-W6-e21">
+                            <connections>
+                                <segue destination="c3J-JF-9sr" kind="presentation" animates="NO" modalTransitionStyle="crossDissolve" id="aWC-ym-IWu"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="tableView" destination="bcb-1N-32H" id="Afc-7B-hUP"/>
                     </connections>
@@ -191,10 +197,10 @@
             </objects>
             <point key="canvasLocation" x="2148" y="138.98050974512745"/>
         </scene>
-        <!--View Controller-->
+        <!--Home Screen View Controller-->
         <scene sceneID="EST-G7-E7T">
             <objects>
-                <viewController id="c3J-JF-9sr" customClass="ViewController" customModule="Game_Bible" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="c3J-JF-9sr" customClass="HomeScreenViewController" customModule="Game_Bible" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="j9N-Q9-jpX"/>
                         <viewControllerLayoutGuide type="bottom" id="9WW-LD-6XG"/>
@@ -226,14 +232,14 @@
                                         <rect key="frame" x="0.0" y="0.0" width="124" height="30"/>
                                         <state key="normal" title="Browse All Games"/>
                                         <connections>
-                                            <segue destination="q3E-d6-QAF" kind="show" id="2TN-a4-jZm"/>
+                                            <segue destination="q3E-d6-QAF" kind="presentation" animates="NO" modalTransitionStyle="flipHorizontal" id="2TN-a4-jZm"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sz5-WO-64w">
                                         <rect key="frame" x="0.0" y="130" width="124" height="30"/>
                                         <state key="normal" title="Filter Search"/>
                                         <connections>
-                                            <segue destination="fYo-Ya-C7e" kind="show" id="g0f-Rl-1gq"/>
+                                            <segue destination="fYo-Ya-C7e" kind="presentation" animates="NO" id="g0f-Rl-1gq"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -278,11 +284,11 @@
                                 <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="SRX-Lv-75l" id="8Mi-Nu-BCY">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="n7Z-5g-6dw">
-                                            <rect key="frame" x="15" y="0.0" width="345" height="43.5"/>
+                                            <rect key="frame" x="15" y="0.0" width="345" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>
@@ -297,7 +303,13 @@
                             <outlet property="delegate" destination="mxK-5x-N3j" id="XMJ-Y4-lPm"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="UkY-IR-vSj"/>
+                    <navigationItem key="navigationItem" id="UkY-IR-vSj">
+                        <barButtonItem key="leftBarButtonItem" style="plain" systemItem="cancel" id="G7m-mb-gDm">
+                            <connections>
+                                <segue destination="c3J-JF-9sr" kind="presentation" animates="NO" id="xD7-sB-WQA"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W4y-0u-6Sh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -322,4 +334,7 @@
             <point key="canvasLocation" x="137" y="903"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="xD7-sB-WQA"/>
+    </inferredMetricsTieBreakers>
 </document>

@@ -24,6 +24,10 @@ class GameDetailViewController: UIViewController, UITableViewDataSource, UITable
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
+    override var prefersStatusBarHidden: Bool {
+        return true
+    }
 
     /*
     // MARK: - Navigation

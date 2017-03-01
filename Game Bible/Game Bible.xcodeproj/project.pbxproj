@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		F60E05491E5F819D004E3C45 /* GameDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F60E05481E5F819D004E3C45 /* GameDetailViewController.swift */; };
-		F60E054B1E60B6CE004E3C45 /* FilterTableViewTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F60E054A1E60B6CE004E3C45 /* FilterTableViewTableViewController.swift */; };
+		F60E054B1E60B6CE004E3C45 /* FilterTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F60E054A1E60B6CE004E3C45 /* FilterTableViewController.swift */; };
 		F60E054D1E611FBF004E3C45 /* GameDetailTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F60E054C1E611FBF004E3C45 /* GameDetailTableViewCell.swift */; };
 		F60E054F1E6128EE004E3C45 /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = F60E054E1E6128EE004E3C45 /* Game.swift */; };
 		F60F4DC21E51F761000594FD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F60F4DC11E51F761000594FD /* AppDelegate.swift */; };
@@ -25,7 +25,7 @@
 
 /* Begin PBXFileReference section */
 		F60E05481E5F819D004E3C45 /* GameDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameDetailViewController.swift; sourceTree = "<group>"; };
-		F60E054A1E60B6CE004E3C45 /* FilterTableViewTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FilterTableViewTableViewController.swift; sourceTree = "<group>"; };
+		F60E054A1E60B6CE004E3C45 /* FilterTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FilterTableViewController.swift; sourceTree = "<group>"; };
 		F60E054C1E611FBF004E3C45 /* GameDetailTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameDetailTableViewCell.swift; sourceTree = "<group>"; };
 		F60E054E1E6128EE004E3C45 /* Game.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
 		F60F4DBE1E51F761000594FD /* Game Bible.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Game Bible.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -81,7 +81,7 @@
 				F60F4DC31E51F761000594FD /* GameTableViewController.swift */,
 				F60E05481E5F819D004E3C45 /* GameDetailViewController.swift */,
 				F6AE9E211E622AFD00663261 /* GameTableViewCell.swift */,
-				F60E054A1E60B6CE004E3C45 /* FilterTableViewTableViewController.swift */,
+				F60E054A1E60B6CE004E3C45 /* FilterTableViewController.swift */,
 				F60E054C1E611FBF004E3C45 /* GameDetailTableViewCell.swift */,
 				F60E054E1E6128EE004E3C45 /* Game.swift */,
 				F60F4DCD1E51F761000594FD /* Info.plist */,
@@ -175,7 +175,7 @@
 			files = (
 				F60E054D1E611FBF004E3C45 /* GameDetailTableViewCell.swift in Sources */,
 				F60F4DD71E522AE4000594FD /* README.md in Sources */,
-				F60E054B1E60B6CE004E3C45 /* FilterTableViewTableViewController.swift in Sources */,
+				F60E054B1E60B6CE004E3C45 /* FilterTableViewController.swift in Sources */,
 				F60E05491E5F819D004E3C45 /* GameDetailViewController.swift in Sources */,
 				F60F4DC41E51F761000594FD /* GameTableViewController.swift in Sources */,
 				F6AE9E241E6380ED00663261 /* HomeScreenViewController.swift in Sources */,

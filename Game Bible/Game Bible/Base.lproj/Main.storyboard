@@ -271,10 +271,10 @@
             </objects>
             <point key="canvasLocation" x="136.80000000000001" y="138.98050974512745"/>
         </scene>
-        <!--Table View Controller-->
+        <!--Filter Table View Controller-->
         <scene sceneID="X7H-mn-baw">
             <objects>
-                <tableViewController id="mxK-5x-N3j" sceneMemberID="viewController">
+                <tableViewController id="mxK-5x-N3j" customClass="FilterTableViewController" customModule="Game_Bible" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="kGP-9K-lm7">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -335,6 +335,6 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="aWC-ym-IWu"/>
+        <segue reference="xD7-sB-WQA"/>
     </inferredMetricsTieBreakers>
 </document>

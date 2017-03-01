@@ -47,8 +47,9 @@ class GameDetailViewController: UIViewController, UITableViewDataSource, UITable
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath) as! GameDetailTableViewCell
     
-    // Configure the cell...
+     // Configure the cell...
     switch indexPath.row {
+        
     case 0:
         cell.fieldLabel.text = "Name"
         cell.valueLabel.text = game.name

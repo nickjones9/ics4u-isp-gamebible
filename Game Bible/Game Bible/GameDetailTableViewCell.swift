@@ -10,9 +10,10 @@ import UIKit
 
 class GameDetailTableViewCell: UITableViewCell {
 
-    
     @IBOutlet weak var fieldLabel: UILabel!
+    
     @IBOutlet weak var valueLabel: UILabel!
+    
     
     override func awakeFromNib() {
         super.awakeFromNib()

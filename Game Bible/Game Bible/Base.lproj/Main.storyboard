@@ -257,10 +257,10 @@
             </objects>
             <point key="canvasLocation" x="-252" y="138.98050974512745"/>
         </scene>
-        <!--View Controller-->
+        <!--Filter View Controller-->
         <scene sceneID="0iE-76-3pF">
             <objects>
-                <viewController id="oYA-El-oFf" sceneMemberID="viewController">
+                <viewController id="oYA-El-oFf" customClass="FilterViewController" customModule="Game_Bible" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="KVf-qH-Lxx"/>
                         <viewControllerLayoutGuide type="bottom" id="NMf-Qh-rcB"/>

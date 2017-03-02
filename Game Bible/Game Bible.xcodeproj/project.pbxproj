@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		F60CFF1D1E68DD930045D6D7 /* FilterTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F60CFF1C1E68DD930045D6D7 /* FilterTableViewCell.swift */; };
+		F60CFF1F1E68E1B70045D6D7 /* FilterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F60CFF1E1E68E1B70045D6D7 /* FilterViewController.swift */; };
 		F60E05491E5F819D004E3C45 /* GameDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F60E05481E5F819D004E3C45 /* GameDetailViewController.swift */; };
 		F60E054B1E60B6CE004E3C45 /* FilterTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F60E054A1E60B6CE004E3C45 /* FilterTableViewController.swift */; };
 		F60E054D1E611FBF004E3C45 /* GameDetailTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F60E054C1E611FBF004E3C45 /* GameDetailTableViewCell.swift */; };
@@ -26,6 +27,7 @@
 
 /* Begin PBXFileReference section */
 		F60CFF1C1E68DD930045D6D7 /* FilterTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FilterTableViewCell.swift; sourceTree = "<group>"; };
+		F60CFF1E1E68E1B70045D6D7 /* FilterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FilterViewController.swift; sourceTree = "<group>"; };
 		F60E05481E5F819D004E3C45 /* GameDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameDetailViewController.swift; sourceTree = "<group>"; };
 		F60E054A1E60B6CE004E3C45 /* FilterTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FilterTableViewController.swift; sourceTree = "<group>"; };
 		F60E054C1E611FBF004E3C45 /* GameDetailTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameDetailTableViewCell.swift; sourceTree = "<group>"; };
@@ -86,6 +88,7 @@
 				F60E054C1E611FBF004E3C45 /* GameDetailTableViewCell.swift */,
 				F60E054A1E60B6CE004E3C45 /* FilterTableViewController.swift */,
 				F60CFF1C1E68DD930045D6D7 /* FilterTableViewCell.swift */,
+				F60CFF1E1E68E1B70045D6D7 /* FilterViewController.swift */,
 				F60E054E1E6128EE004E3C45 /* Game.swift */,
 				F60F4DCD1E51F761000594FD /* Info.plist */,
 			);
@@ -182,6 +185,7 @@
 				F60E054B1E60B6CE004E3C45 /* FilterTableViewController.swift in Sources */,
 				F60E05491E5F819D004E3C45 /* GameDetailViewController.swift in Sources */,
 				F60F4DC41E51F761000594FD /* GameTableViewController.swift in Sources */,
+				F60CFF1F1E68E1B70045D6D7 /* FilterViewController.swift in Sources */,
 				F6AE9E241E6380ED00663261 /* HomeScreenViewController.swift in Sources */,
 				F60E054F1E6128EE004E3C45 /* Game.swift in Sources */,
 				F60F4DC21E51F761000594FD /* AppDelegate.swift in Sources */,

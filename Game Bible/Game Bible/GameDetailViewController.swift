@@ -16,6 +16,7 @@ class GameDetailViewController: UIViewController, UITableViewDataSource, UITable
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.navigationController?.setNavigationBarHidden(false, animated: false)
 
         gameNameLabel.text = game.name
     }

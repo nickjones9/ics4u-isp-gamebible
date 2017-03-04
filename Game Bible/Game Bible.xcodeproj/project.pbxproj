@@ -9,6 +9,10 @@
 /* Begin PBXBuildFile section */
 		F60CFF1D1E68DD930045D6D7 /* FilterTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F60CFF1C1E68DD930045D6D7 /* FilterTableViewCell.swift */; };
 		F60CFF1F1E68E1B70045D6D7 /* FilterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F60CFF1E1E68E1B70045D6D7 /* FilterViewController.swift */; };
+		F60CFF301E6B37250045D6D7 /* BEMAnimationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F60CFF291E6B37250045D6D7 /* BEMAnimationManager.m */; };
+		F60CFF311E6B37250045D6D7 /* BEMCheckBox.m in Sources */ = {isa = PBXBuildFile; fileRef = F60CFF2B1E6B37250045D6D7 /* BEMCheckBox.m */; };
+		F60CFF321E6B37250045D6D7 /* BEMCheckBoxGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = F60CFF2D1E6B37250045D6D7 /* BEMCheckBoxGroup.m */; };
+		F60CFF331E6B37250045D6D7 /* BEMPathManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F60CFF2F1E6B37250045D6D7 /* BEMPathManager.m */; };
 		F60E05491E5F819D004E3C45 /* GameDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F60E05481E5F819D004E3C45 /* GameDetailViewController.swift */; };
 		F60E054B1E60B6CE004E3C45 /* FilterTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F60E054A1E60B6CE004E3C45 /* FilterTableViewController.swift */; };
 		F60E054D1E611FBF004E3C45 /* GameDetailTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F60E054C1E611FBF004E3C45 /* GameDetailTableViewCell.swift */; };
@@ -28,6 +32,15 @@
 /* Begin PBXFileReference section */
 		F60CFF1C1E68DD930045D6D7 /* FilterTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FilterTableViewCell.swift; sourceTree = "<group>"; };
 		F60CFF1E1E68E1B70045D6D7 /* FilterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FilterViewController.swift; sourceTree = "<group>"; };
+		F60CFF241E6B34B70045D6D7 /* CheckMarkHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CheckMarkHeader.h; path = ../CheckMarkHeader.h; sourceTree = "<group>"; };
+		F60CFF281E6B37250045D6D7 /* BEMAnimationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BEMAnimationManager.h; sourceTree = "<group>"; };
+		F60CFF291E6B37250045D6D7 /* BEMAnimationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BEMAnimationManager.m; sourceTree = "<group>"; };
+		F60CFF2A1E6B37250045D6D7 /* BEMCheckBox.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BEMCheckBox.h; sourceTree = "<group>"; };
+		F60CFF2B1E6B37250045D6D7 /* BEMCheckBox.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BEMCheckBox.m; sourceTree = "<group>"; };
+		F60CFF2C1E6B37250045D6D7 /* BEMCheckBoxGroup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BEMCheckBoxGroup.h; sourceTree = "<group>"; };
+		F60CFF2D1E6B37250045D6D7 /* BEMCheckBoxGroup.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BEMCheckBoxGroup.m; sourceTree = "<group>"; };
+		F60CFF2E1E6B37250045D6D7 /* BEMPathManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BEMPathManager.h; sourceTree = "<group>"; };
+		F60CFF2F1E6B37250045D6D7 /* BEMPathManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BEMPathManager.m; sourceTree = "<group>"; };
 		F60E05481E5F819D004E3C45 /* GameDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameDetailViewController.swift; sourceTree = "<group>"; };
 		F60E054A1E60B6CE004E3C45 /* FilterTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FilterTableViewController.swift; sourceTree = "<group>"; };
 		F60E054C1E611FBF004E3C45 /* GameDetailTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameDetailTableViewCell.swift; sourceTree = "<group>"; };
@@ -57,6 +70,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F60CFF271E6B37250045D6D7 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				F60CFF281E6B37250045D6D7 /* BEMAnimationManager.h */,
+				F60CFF291E6B37250045D6D7 /* BEMAnimationManager.m */,
+				F60CFF2A1E6B37250045D6D7 /* BEMCheckBox.h */,
+				F60CFF2B1E6B37250045D6D7 /* BEMCheckBox.m */,
+				F60CFF2C1E6B37250045D6D7 /* BEMCheckBoxGroup.h */,
+				F60CFF2D1E6B37250045D6D7 /* BEMCheckBoxGroup.m */,
+				F60CFF2E1E6B37250045D6D7 /* BEMPathManager.h */,
+				F60CFF2F1E6B37250045D6D7 /* BEMPathManager.m */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
 		F60F4DB51E51F760000594FD = {
 			isa = PBXGroup;
 			children = (
@@ -77,6 +105,7 @@
 		F60F4DC01E51F761000594FD /* Game Bible */ = {
 			isa = PBXGroup;
 			children = (
+				F60CFF271E6B37250045D6D7 /* Classes */,
 				F60F4DC51E51F761000594FD /* Main.storyboard */,
 				F60F4DCA1E51F761000594FD /* LaunchScreen.storyboard */,
 				F60F4DC81E51F761000594FD /* Assets.xcassets */,
@@ -90,6 +119,7 @@
 				F60CFF1C1E68DD930045D6D7 /* FilterTableViewCell.swift */,
 				F60CFF1E1E68E1B70045D6D7 /* FilterViewController.swift */,
 				F60E054E1E6128EE004E3C45 /* Game.swift */,
+				F60CFF241E6B34B70045D6D7 /* CheckMarkHeader.h */,
 				F60F4DCD1E51F761000594FD /* Info.plist */,
 			);
 			path = "Game Bible";
@@ -188,9 +218,13 @@
 				F60CFF1F1E68E1B70045D6D7 /* FilterViewController.swift in Sources */,
 				F6AE9E241E6380ED00663261 /* HomeScreenViewController.swift in Sources */,
 				F60E054F1E6128EE004E3C45 /* Game.swift in Sources */,
+				F60CFF311E6B37250045D6D7 /* BEMCheckBox.m in Sources */,
+				F60CFF321E6B37250045D6D7 /* BEMCheckBoxGroup.m in Sources */,
+				F60CFF331E6B37250045D6D7 /* BEMPathManager.m in Sources */,
 				F60F4DC21E51F761000594FD /* AppDelegate.swift in Sources */,
 				F6AE9E221E622AFD00663261 /* GameTableViewCell.swift in Sources */,
 				F60CFF1D1E68DD930045D6D7 /* FilterTableViewCell.swift in Sources */,
+				F60CFF301E6B37250045D6D7 /* BEMAnimationManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -319,6 +353,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "ca.on.rsgc.Game-Bible";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = CheckMarkHeader.h;
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -333,6 +368,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "ca.on.rsgc.Game-Bible";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = CheckMarkHeader.h;
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;

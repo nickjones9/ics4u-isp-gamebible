@@ -12,6 +12,7 @@ class GameDetailViewController: UIViewController, UITableViewDataSource, UITable
     
     var game:Game!
     
+    @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var gameNameLabel: UILabel!
 
     override func viewDidLoad() {
@@ -19,6 +20,16 @@ class GameDetailViewController: UIViewController, UITableViewDataSource, UITable
         self.navigationController?.setNavigationBarHidden(false, animated: false)
 
         gameNameLabel.text = game.name
+        
+        tableView.backgroundColor = UIColor(red: 240.0/255.0, green: 240.0/255.0, blue: 240.0/255.0, alpha: 0.2)
+        tableView.tableFooterView = UIView(frame: CGRect.zero)
+        tableView.separatorColor = UIColor(red: 240.0/255.0, green: 240.0/255.0, blue: 240.0/255.0, alpha: 0.8)
+        
+        UINavigationBar.appearance().barTintColor = UIColor(red: 216.0/255.0, green: 74.0/255.0, blue: 32.0/255.0, alpha: 1.0)
+        
+        if let barFont = UIFont(name: "Avenir-Light", size: 24.0) {
+            UINavigationBar.appearance().titleTextAttributes = [NSForegroundColorAttributeName:UIColor.white, NSFontAttributeName:barFont]
+        }
     }
 
     override func didReceiveMemoryWarning() {
@@ -72,6 +83,8 @@ class GameDetailViewController: UIViewController, UITableViewDataSource, UITable
         cell.valueLabel.text = "Default Value"
         
     }
+        cell.backgroundColor = UIColor.clear
         return cell
     }
+    
 }

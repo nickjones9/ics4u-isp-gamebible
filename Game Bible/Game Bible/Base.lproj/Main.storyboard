@@ -279,7 +279,7 @@
                                 </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="vXJ-zI-ZdJ">
-                                <rect key="frame" x="0.0" y="114" width="375" height="615"/>
+                                <rect key="frame" x="0.0" y="-6" width="375" height="803"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EBo-Ix-9LQ">
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="216"/>
@@ -405,26 +405,20 @@
                                         </constraints>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xez-1M-1Yt">
-                                        <rect key="frame" x="0.0" y="587" width="375" height="28"/>
+                                        <rect key="frame" x="0.0" y="587" width="375" height="216"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Action Level" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1B3-8N-IqI">
-                                                <rect key="frame" x="0.0" y="0.0" width="125" height="28"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="125" height="216"/>
                                                 <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="kf9-1j-Gaw">
-                                                <rect key="frame" x="125" y="0.0" width="250" height="29"/>
-                                                <segments>
-                                                    <segment title="Low"/>
-                                                    <segment title="Medium"/>
-                                                    <segment title="High"/>
-                                                    <segment title="Any"/>
-                                                </segments>
-                                            </segmentedControl>
+                                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xII-eE-HIi">
+                                                <rect key="frame" x="125" y="0.0" width="250" height="216"/>
+                                            </pickerView>
                                         </subviews>
                                         <constraints>
-                                            <constraint firstItem="kf9-1j-Gaw" firstAttribute="width" secondItem="1B3-8N-IqI" secondAttribute="width" multiplier="2" id="hwh-j4-uBh"/>
+                                            <constraint firstItem="xII-eE-HIi" firstAttribute="width" secondItem="1B3-8N-IqI" secondAttribute="width" multiplier="2" id="7SA-sw-RMg"/>
                                         </constraints>
                                     </stackView>
                                 </subviews>
@@ -433,13 +427,14 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="3j2-i7-icq" firstAttribute="centerX" secondItem="olj-Ss-5bX" secondAttribute="centerX" id="1bW-nO-NLL"/>
-                            <constraint firstItem="vXJ-zI-ZdJ" firstAttribute="top" secondItem="KVf-qH-Lxx" secondAttribute="bottom" id="4DH-hE-9Yl"/>
                             <constraint firstItem="vXJ-zI-ZdJ" firstAttribute="leading" secondItem="olj-Ss-5bX" secondAttribute="leading" id="Fjo-DS-dZv"/>
                             <constraint firstItem="NMf-Qh-rcB" firstAttribute="top" secondItem="3j2-i7-icq" secondAttribute="bottom" constant="20" id="G7d-eA-7uG"/>
                             <constraint firstAttribute="trailing" secondItem="vXJ-zI-ZdJ" secondAttribute="trailing" id="d6U-gl-5eL"/>
+                            <constraint firstItem="vXJ-zI-ZdJ" firstAttribute="top" secondItem="KVf-qH-Lxx" secondAttribute="bottom" id="vpN-XU-h0X"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="optionsPicker" destination="ZNw-0i-Bdi" id="li1-FK-Ahb"/>
                         <outlet property="playersPicker" destination="JiU-nV-dOp" id="sql-6K-CZb"/>
                     </connections>
                 </viewController>

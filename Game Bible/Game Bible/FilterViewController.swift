@@ -10,40 +10,41 @@ import UIKit
 
 class FilterViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDelegate {
     
+    @IBOutlet weak var optionsPicker: UIPickerView!
+
+    @IBOutlet weak var playersPicker: UIPickerView!
+    
     let playerOptions = ["1", "2", "3", "4", "5", "5+"]
     let difficultyOptions = ["Easy", "Medium", "Hard", "Any"]
     
     
     func numberOfComponents(in pickerView: UIPickerView) -> Int {
         //if pickerView == playersPicker {
-            return 1
+        return 1
         //} else if pickerView == optionsPicker {
         //    return 1
         //}
     }
     
     func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
-         //if pickerView == playersPicker {
-            return playerOptions[row]
-         //} else if pickerView == optionsPicker {
-         //   return difficultyOptions[row]
+        //if pickerView == playersPicker {
+        return playerOptions[row]
+        //} else if pickerView == optionsPicker {
+        //   return difficultyOptions[row]
         //}
     }
     
     func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
-       // if pickerView == playersPicker {
-            return playerOptions.count
+        // if pickerView == playersPicker {
+        return playerOptions.count
         //} else if pickerView == optionsPicker {
         //    return difficultyOptions.count
         //}
     }
     
-//    func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
-//        <#code#>
-//    }
-    @IBOutlet weak var optionsPicker: UIPickerView!
-
-    @IBOutlet weak var playersPicker: UIPickerView!
+    //    func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
+    //        <#code#>
+    //    }
     
     
     override func viewDidLoad() {
@@ -58,7 +59,7 @@ class FilterViewController: UIViewController, UIPickerViewDataSource, UIPickerVi
     }
     
     override var prefersStatusBarHidden: Bool {
-        return true
+        return false
     }
 
     /*

@@ -37,7 +37,7 @@ class GameTableViewController: UIViewController, UITableViewDataSource, UITableV
     }
     
     override var prefersStatusBarHidden: Bool {
-        return true
+        return false
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {

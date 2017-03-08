@@ -39,7 +39,7 @@ class FilterTableViewController: UITableViewController {
     }
     
     override var prefersStatusBarHidden: Bool {
-        return true
+        return false
     }
 
     /*

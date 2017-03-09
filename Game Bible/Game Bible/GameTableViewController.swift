@@ -19,6 +19,9 @@ class GameTableViewController: UIViewController, UITableViewDataSource, UITableV
         Game(name: "Go Fish", players: "2", description: "XXX", instructions: "XXX", materials: "XXX"),
         Game(name: "War", players: "2", description: "XXX", instructions: "XXX", materials: "XXX")
             ]
+    var gameImages = ["chips", "cards", "dominos", "cards", "cards"]
+    
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -60,6 +63,7 @@ class GameTableViewController: UIViewController, UITableViewDataSource, UITableV
         let cell = tableView.dequeueReusableCell(withIdentifier: cellIdentifier, for: indexPath) as! GameTableViewCell
         
         cell.nameLabel.text = games[indexPath.row].name
+        cell.thumbnailImageView.image = UIImage(named: gameImages[indexPath.row])
         cell.playersLabel.text = games[indexPath.row].players
         //descriptionLabel.text = games[indexPath.row].description
         //instructionsLabel.text = games[indexPath.row].instructions

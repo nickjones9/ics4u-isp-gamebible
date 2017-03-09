@@ -16,6 +16,8 @@ class GameTableViewCell: UITableViewCell {
     
     @IBOutlet weak var materialsLabel: UILabel!
     
+    @IBOutlet weak var thumbnailImageView: UIImageView!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

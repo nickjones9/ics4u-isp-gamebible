@@ -14,12 +14,15 @@ class GameDetailViewController: UIViewController, UITableViewDataSource, UITable
     
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var gameNameLabel: UILabel!
+    @IBOutlet weak var gameImageView: UIImageView!
 
     override func viewDidLoad() {
         super.viewDidLoad()
         self.navigationController?.setNavigationBarHidden(false, animated: false)
 
-        gameNameLabel.text = game.name
+        //gameNameLabel.text = game.name
+        title = game.name
+        gameImageView.image = UIImage(named: game.image)
         
         tableView.backgroundColor = UIColor(red: 240.0/255.0, green: 240.0/255.0, blue: 240.0/255.0, alpha: 0.2)
         tableView.tableFooterView = UIView(frame: CGRect.zero)

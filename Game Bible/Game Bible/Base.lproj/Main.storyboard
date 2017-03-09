@@ -12,7 +12,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--All Games-->
+        <!--Games-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="GameTableViewController" customModule="Game_Bible" customModuleProvider="target" sceneMemberID="viewController">
@@ -106,7 +106,7 @@
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="bcb-1N-32H" secondAttribute="bottom" id="xUs-oC-0pH"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="All Games" id="iht-yS-MVJ"/>
+                    <navigationItem key="navigationItem" title="Games" id="iht-yS-MVJ"/>
                     <connections>
                         <outlet property="tableView" destination="bcb-1N-32H" id="Afc-7B-hUP"/>
                     </connections>
@@ -130,16 +130,13 @@
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="eKd-k3-V10">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="716"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <label key="tableHeaderView" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Game Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="NqW-7h-hLk">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="51"/>
-                                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                    <fontDescription key="fontDescription" type="system" weight="ultraLight" pointSize="41"/>
-                                    <nil key="textColor"/>
-                                    <nil key="highlightedColor"/>
-                                </label>
+                                <imageView key="tableHeaderView" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="mwG-Xm-3at">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="262"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                </imageView>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell" id="JUW-2V-s8K" userLabel="Cell" customClass="GameDetailTableViewCell" customModule="Game_Bible" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="79" width="375" height="44"/>
+                                        <rect key="frame" x="0.0" y="290" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="JUW-2V-s8K" id="DWL-3i-dLW">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
@@ -193,13 +190,13 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="gameNameLabel" destination="NqW-7h-hLk" id="vtR-Sj-XSw"/>
+                        <outlet property="gameImageView" destination="mwG-Xm-3at" id="QC1-ie-rFt"/>
                         <outlet property="tableView" destination="eKd-k3-V10" id="7Or-eL-THI"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eCa-m5-dY0" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5570" y="1052"/>
+            <point key="canvasLocation" x="5568.8000000000002" y="1051.1244377811095"/>
         </scene>
         <!--Game Bible-->
         <scene sceneID="EST-G7-E7T">
@@ -272,7 +269,7 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EBo-Ix-9LQ">
                                         <rect key="frame" x="0.0" y="0.0" width="325" height="216"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="# of Players" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dW4-dl-6Oh">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Players" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dW4-dl-6Oh">
                                                 <rect key="frame" x="0.0" y="0.0" width="108.5" height="216"/>
                                                 <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
                                                 <nil key="textColor"/>
@@ -446,6 +443,7 @@
         <!--Filter Results-->
         <scene sceneID="X7H-mn-baw">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="W4y-0u-6Sh" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <tableViewController id="mxK-5x-N3j" customClass="FilterTableViewController" customModule="Game_Bible" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="kGP-9K-lm7">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
@@ -511,7 +509,7 @@
                                     <outlet property="materialsLabel" destination="0TV-Jj-Lko" id="GMb-t7-Sds"/>
                                     <outlet property="nameLabel" destination="jSf-zg-g5T" id="D4i-AQ-1lP"/>
                                     <outlet property="playersLabel" destination="0Vn-Vh-UWS" id="sfH-ik-TB3"/>
-                                    <segue destination="9QZ-L9-3TB" kind="show" id="dxe-Lh-Rgq"/>
+                                    <segue destination="9QZ-L9-3TB" kind="show" identifier="showGameDetail" id="dxe-Lh-Rgq"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -522,7 +520,6 @@
                     </tableView>
                     <navigationItem key="navigationItem" title="Filter Results" id="UkY-IR-vSj"/>
                 </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="W4y-0u-6Sh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3031" y="1093"/>
         </scene>

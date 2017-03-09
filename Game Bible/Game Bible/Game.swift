@@ -14,12 +14,14 @@ class Game {
     var description = ""
     var instructions = ""
     var materials = ""
+    var image = ""
     
-    init(name: String, players: String, description: String, instructions: String, materials: String) {
+    init(name: String, players: String, description: String, instructions: String, materials: String, image: String) {
         self.name = name
         self.players = players
         self.description = description
         self.instructions = instructions
         self.materials = materials
+        self.image = image
     }
 }

@@ -562,11 +562,11 @@
             </objects>
             <point key="canvasLocation" x="1152.8" y="138.98050974512745"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--Filter-->
         <scene sceneID="l6x-Bc-Mwc">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="yKg-5C-UHf" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" systemItem="search" id="mdO-5v-qmn"/>
+                    <tabBarItem key="tabBarItem" title="Filter" id="mdO-5v-qmn"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="w9k-J5-2PX">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>

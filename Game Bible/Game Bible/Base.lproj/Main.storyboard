@@ -263,21 +263,21 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" alignment="center" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="Cih-DI-4QG">
-                                <rect key="frame" x="59" y="85" width="255" height="411"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" alignment="center" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="Cih-DI-4QG">
+                                <rect key="frame" x="59" y="85" width="256" height="491"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
-                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="fFL-t0-Gx7">
-                                        <rect key="frame" x="32" y="0.0" width="191" height="48.5"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="fFL-t0-Gx7">
+                                        <rect key="frame" x="32" y="0.0" width="191.5" height="58.5"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Players" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uFV-OD-d0r">
-                                                <rect key="frame" x="67.5" y="0.0" width="56" height="20.5"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <rect key="frame" x="67" y="0.0" width="57.5" height="20.5"/>
+                                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <segmentedControl opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="5ZA-aK-U9v">
-                                                <rect key="frame" x="0.0" y="20.5" width="191" height="29"/>
+                                                <rect key="frame" x="0.0" y="30.5" width="191.5" height="29"/>
                                                 <segments>
                                                     <segment title="1"/>
                                                     <segment title="2"/>
@@ -289,20 +289,20 @@
                                             </segmentedControl>
                                         </subviews>
                                     </stackView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="IYP-E0-f7E">
-                                        <rect key="frame" x="55.5" y="98.5" width="144" height="115.5"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="IYP-E0-f7E">
+                                        <rect key="frame" x="55.5" y="98.5" width="144.5" height="125.5"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Materials" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DbD-2d-02U">
-                                                <rect key="frame" x="37" y="0.0" width="70" height="20.5"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <rect key="frame" x="36" y="0.0" width="72.5" height="20.5"/>
+                                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="J9O-Mn-cQQ">
-                                                <rect key="frame" x="0.0" y="20.5" width="144" height="95"/>
+                                                <rect key="frame" x="0.0" y="30.5" width="144.5" height="95"/>
                                                 <subviews>
                                                     <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="8Cf-WI-Xs1">
-                                                        <rect key="frame" x="0.0" y="0.0" width="144" height="25"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="144.5" height="25"/>
                                                         <subviews>
                                                             <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="YpY-qX-5gF" customClass="BEMCheckBox">
                                                                 <rect key="frame" x="0.0" y="0.0" width="25" height="25"/>
@@ -313,7 +313,7 @@
                                                                 </constraints>
                                                             </view>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Deck of Cards" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="843-iG-2rh">
-                                                                <rect key="frame" x="35" y="2" width="109" height="20.5"/>
+                                                                <rect key="frame" x="35" y="2" width="109.5" height="20.5"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                                 <nil key="textColor"/>
                                                                 <nil key="highlightedColor"/>
@@ -321,7 +321,7 @@
                                                         </subviews>
                                                     </stackView>
                                                     <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="yZC-yJ-kmR">
-                                                        <rect key="frame" x="0.0" y="35" width="144" height="25"/>
+                                                        <rect key="frame" x="0.0" y="35" width="144.5" height="25"/>
                                                         <subviews>
                                                             <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="kox-Bb-zRO" customClass="BEMCheckBox">
                                                                 <rect key="frame" x="0.0" y="0.0" width="25" height="25"/>
@@ -332,7 +332,7 @@
                                                                 </constraints>
                                                             </view>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Pair of Dice" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sm6-YT-3Fc">
-                                                                <rect key="frame" x="35" y="2" width="109" height="20.5"/>
+                                                                <rect key="frame" x="35" y="2" width="109.5" height="20.5"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                                 <nil key="textColor"/>
                                                                 <nil key="highlightedColor"/>
@@ -340,7 +340,7 @@
                                                         </subviews>
                                                     </stackView>
                                                     <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="sdl-3W-0a2">
-                                                        <rect key="frame" x="0.0" y="70" width="144" height="25"/>
+                                                        <rect key="frame" x="0.0" y="70" width="144.5" height="25"/>
                                                         <subviews>
                                                             <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="64t-CJ-f2m" customClass="BEMCheckBox">
                                                                 <rect key="frame" x="0.0" y="0.0" width="25" height="25"/>
@@ -351,7 +351,7 @@
                                                                 </constraints>
                                                             </view>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Dominos" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FS7-Pm-gG2">
-                                                                <rect key="frame" x="35" y="2" width="109" height="20.5"/>
+                                                                <rect key="frame" x="35" y="2" width="109.5" height="20.5"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                                 <nil key="textColor"/>
                                                                 <nil key="highlightedColor"/>
@@ -362,17 +362,17 @@
                                             </stackView>
                                         </subviews>
                                     </stackView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="p4F-Ut-AtY">
-                                        <rect key="frame" x="0.0" y="264" width="255" height="48.5"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="p4F-Ut-AtY">
+                                        <rect key="frame" x="0.0" y="264" width="255.5" height="58.5"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Difficulty" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="No0-UU-PqZ">
-                                                <rect key="frame" x="93" y="0.0" width="69" height="20.5"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <rect key="frame" x="92" y="0.0" width="71.5" height="20.5"/>
+                                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <segmentedControl opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="Y8u-DI-LKF">
-                                                <rect key="frame" x="0.0" y="20.5" width="255" height="29"/>
+                                                <rect key="frame" x="0.0" y="30.5" width="255.5" height="29"/>
                                                 <segments>
                                                     <segment title="Easy"/>
                                                     <segment title="Medium"/>
@@ -382,17 +382,17 @@
                                             </segmentedControl>
                                         </subviews>
                                     </stackView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Flp-ob-hV3">
-                                        <rect key="frame" x="0.0" y="362.5" width="255" height="48.5"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Flp-ob-hV3">
+                                        <rect key="frame" x="0.0" y="362.5" width="255.5" height="58.5"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Action" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DFA-Ry-BuA">
-                                                <rect key="frame" x="103" y="0.0" width="49" height="20.5"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <rect key="frame" x="102.5" y="0.0" width="50.5" height="20.5"/>
+                                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <segmentedControl opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="7l3-UY-T9z">
-                                                <rect key="frame" x="0.0" y="20.5" width="255" height="29"/>
+                                                <rect key="frame" x="0.0" y="30.5" width="255.5" height="29"/>
                                                 <segments>
                                                     <segment title="Low"/>
                                                     <segment title="Medium"/>
@@ -402,6 +402,13 @@
                                             </segmentedControl>
                                         </subviews>
                                     </stackView>
+                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C9q-J2-GI7">
+                                        <rect key="frame" x="102" y="461" width="51.5" height="30"/>
+                                        <state key="normal" title="Browse"/>
+                                        <connections>
+                                            <segue destination="mxK-5x-N3j" kind="show" id="5hE-LE-pcv"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                             </stackView>
                         </subviews>
@@ -526,9 +533,10 @@
                     </tabBar>
                     <connections>
                         <segue destination="ImF-dt-Ylt" kind="relationship" relationship="viewControllers" id="Qgu-7f-dVM"/>
-                        <segue destination="yKg-5C-UHf" kind="relationship" relationship="viewControllers" id="dSg-9c-zWs"/>
-                        <segue destination="3HA-7E-YbF" kind="relationship" relationship="viewControllers" id="Kzs-cj-Gv9"/>
-                        <segue destination="FfO-iz-bVJ" kind="relationship" relationship="viewControllers" id="z3o-0x-GoO"/>
+                        <segue destination="bPz-rC-VrN" kind="relationship" relationship="viewControllers" id="W6z-o6-AQK"/>
+                        <segue destination="yKg-5C-UHf" kind="relationship" relationship="viewControllers" id="LmK-df-BjO"/>
+                        <segue destination="3HA-7E-YbF" kind="relationship" relationship="viewControllers" id="fHm-OS-83N"/>
+                        <segue destination="FfO-iz-bVJ" kind="relationship" relationship="viewControllers" id="HgW-wc-mKl"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TFQ-Ps-Tez" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -553,6 +561,52 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EyQ-FA-Ksh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1153" y="1094"/>
+        </scene>
+        <!--Root View Controller-->
+        <scene sceneID="J4a-NN-z73">
+            <objects>
+                <tableViewController id="pxg-k3-GDu" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="f5m-fU-p1J">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="geI-dP-ShZ">
+                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="geI-dP-ShZ" id="oD9-Yk-7pW">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="pxg-k3-GDu" id="fqf-tf-hbe"/>
+                            <outlet property="delegate" destination="pxg-k3-GDu" id="CSY-sR-MCL"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Root View Controller" id="HDZ-Hm-0hL"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cDh-0Q-mec" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3056" y="-2164"/>
+        </scene>
+        <!--Categories-->
+        <scene sceneID="cr0-Sx-4cc">
+            <objects>
+                <navigationController id="bPz-rC-VrN" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Categories" id="csT-Pb-cWg"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="hu5-89-CDn">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="pxg-k3-GDu" kind="relationship" relationship="rootViewController" id="uRe-6B-Z0m"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wC5-FD-Znb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2097" y="-2164"/>
         </scene>
         <!--Root View Controller-->
         <scene sceneID="z1k-kL-3Dg">

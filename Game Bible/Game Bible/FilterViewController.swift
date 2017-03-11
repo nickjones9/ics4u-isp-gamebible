@@ -6,6 +6,7 @@
 //  Copyright © 2017 Nicholas Jones. All rights reserved.
 //
 
+// Materials include... Card Deck, Shot Glasses, Solo Cups, TV, Coins, Quarters, Dice, Poker Chips, Pen, Beer Cans, Beer Bottels, Hard Alcohol, Beer Bong, Ping Pong Balls, 
 import UIKit
 
 class FilterViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDelegate {

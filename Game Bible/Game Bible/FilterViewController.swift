@@ -9,14 +9,20 @@
 // Materials include... Card Deck, Shot Glasses, Solo Cups, TV, Coins, Quarters, Dice, Poker Chips, Pen, Beer Cans, Beer Bottels, Hard Alcohol, Beer Bong, Ping Pong Balls, 
 import UIKit
 
-class FilterViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDelegate {
+class FilterViewController: UIViewController {
     
     @IBOutlet weak var optionsPicker: UIPickerView!
 
     @IBOutlet weak var playersPicker: UIPickerView!
     
-    let playerOptions = ["1", "2", "3", "4", "5", "5+"]
-    let difficultyOptions = ["Easy", "Medium", "Hard", "Any"]
+    var playersSelected = ""
+    
+    var hasDeckOfCards = false
+    var hasPairOfDice = false
+    var hasDominos = false
+    
+    var difficultySelected = ""
+    var actionSelected = ""
     
     
     func numberOfComponents(in pickerView: UIPickerView) -> Int {
@@ -26,27 +32,6 @@ class FilterViewController: UIViewController, UIPickerViewDataSource, UIPickerVi
         //    return 1
         //}
     }
-    
-    func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
-        //if pickerView == playersPicker {
-        return playerOptions[row]
-        //} else if pickerView == optionsPicker {
-        //   return difficultyOptions[row]
-        //}
-    }
-    
-    func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
-        // if pickerView == playersPicker {
-        return playerOptions.count
-        //} else if pickerView == optionsPicker {
-        //    return difficultyOptions.count
-        //}
-    }
-    
-    //    func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
-    //        <#code#>
-    //    }
-    
     
     override func viewDidLoad() {
         super.viewDidLoad()

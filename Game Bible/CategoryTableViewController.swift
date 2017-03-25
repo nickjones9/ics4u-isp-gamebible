@@ -39,7 +39,15 @@ class CategoryTableViewController: UIViewController, UITableViewDataSource, UITa
     }
     
     
-    
+//    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+//        if segue.identifier == "showCategory" {
+//            if let indexPath = tableView.indexPathForSelectedRow {
+//                let destinationController = segue.destination as! ***GameDetailViewController
+//                destinationController.game = categories[indexPath.row]
+//            }
+//        }
+//    }
+//
 
     /*
     // MARK: - Navigation

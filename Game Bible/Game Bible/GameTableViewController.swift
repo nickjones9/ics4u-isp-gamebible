@@ -12,31 +12,19 @@ class GameTableViewController: UIViewController, UITableViewDataSource, UITableV
 
     @IBOutlet weak var tableView: UITableView!
     
-    var games:[Game] = [
-        Game(name: "Blackjack", players: "2+ Players, 1 Dealer", description: "In blackjack...", instructions: "To play blackjack...", materials: "Card Deck, Poker Chips", image: "chips", playersRequired: "2", deckOfCards: true, pairOfDice: false, dominos: false, difficulty: "medium", action: "medium"),
+    var gameData : GameData = GameData()
+    var games : [Game] = []
         
-        
-        
-        
-        
-        
-        
-        
-//        Game(name: "Crazy Eights", players: "3+ Players", description: "XXX", instructions: "XXX", materials: "Card Deck", image: "cards"),
-//        Game(name: "Dominos", players: "2+ Players", description: "XXX", instructions: "XXX", materials: "Dominos", image: "dominos"),
-//        Game(name: "Go Fish", players: "3+ Players", description: "XXX", instructions: "XXX", materials: "Card Deck", image: "cards"),
-//        Game(name: "War", players: "2 Players", description: "XXX", instructions: "XXX", materials: "Card Deck", image: "cards")
-            ]
-    
-    
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.navigationController?.setNavigationBarHidden(false, animated: false)
+        
+        // Make a new reference to the games data
+        games = gameData.games
     }
     
     override func viewDidAppear(_ animated: Bool) {
-        if let selectedRow = tableView.indexPathForSelectedRow {
+        if tableView.indexPathForSelectedRow != nil {
             tableView.deselectRow(at: tableView.indexPathForSelectedRow!, animated: true)
         }
     }

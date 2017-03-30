@@ -34,10 +34,6 @@ class GameTableViewController: UIViewController, UITableViewDataSource, UITableV
         // Dispose of any resources that can be recreated.
     }
     
-    override var prefersStatusBarHidden: Bool {
-        return false
-    }
-    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "showGameDetail" {
             if let indexPath = tableView.indexPathForSelectedRow {

@@ -496,7 +496,7 @@
                                             <outlet property="nameLabel" destination="Au5-mF-rK3" id="rbS-5U-a78"/>
                                             <outlet property="playersLabel" destination="fmp-89-Rag" id="5tI-26-BEc"/>
                                             <outlet property="thumbnailImageView" destination="dyB-0q-ace" id="mnQ-h7-G2h"/>
-                                            <segue destination="9QZ-L9-3TB" kind="show" id="nHp-zu-mBI"/>
+                                            <segue destination="9QZ-L9-3TB" kind="show" identifier="showGameDetail" id="nHp-zu-mBI"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -514,6 +514,9 @@
                             <constraint firstAttribute="trailing" secondItem="tDh-p5-99t" secondAttribute="trailing" id="knK-5G-rTF"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="tableView" destination="tDh-p5-99t" id="4vU-Yj-gCA"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WUt-LV-v8y" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

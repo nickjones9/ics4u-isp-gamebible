@@ -196,7 +196,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eCa-m5-dY0" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5568.8000000000002" y="1051.1244377811095"/>
+            <point key="canvasLocation" x="4014" y="1093"/>
         </scene>
         <!--Game Bible-->
         <scene sceneID="EST-G7-E7T">
@@ -402,11 +402,11 @@
                                             </segmentedControl>
                                         </subviews>
                                     </stackView>
-                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C9q-J2-GI7">
+                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fkp-hI-t5y">
                                         <rect key="frame" x="102" y="461" width="51.5" height="30"/>
                                         <state key="normal" title="Browse"/>
                                         <connections>
-                                            <segue destination="Mqq-NS-DuU" kind="show" id="e5S-Ed-WY9"/>
+                                            <segue destination="Mqq-NS-DuU" kind="show" id="vId-mk-PU5"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -440,7 +440,7 @@
                                         <rect key="frame" x="0.0" y="28" width="375" height="80"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="arH-aO-rJr" id="S0V-NW-GFo">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="79"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="80"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <stackView opaque="NO" contentMode="scaleToFill" alignment="top" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="FP2-xI-Lbd">
@@ -500,6 +500,10 @@
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="Mqq-NS-DuU" id="hBv-fx-QEe"/>
+                                    <outlet property="delegate" destination="Mqq-NS-DuU" id="2K4-1q-xb6"/>
+                                </connections>
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -866,6 +870,6 @@
         <image name="games" width="30" height="30"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="Gjd-cM-v67"/>
+        <segue reference="nHp-zu-mBI"/>
     </inferredMetricsTieBreakers>
 </document>

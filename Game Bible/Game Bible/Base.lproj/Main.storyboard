@@ -415,6 +415,14 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" title="Filter" id="4Dr-S1-I3R"/>
+                    <connections>
+                        <outlet property="actionSegment" destination="7l3-UY-T9z" id="lnV-l2-Oba"/>
+                        <outlet property="deckOfCardsCheckbox" destination="YpY-qX-5gF" id="GbF-Mr-A1f"/>
+                        <outlet property="difficultySegment" destination="Y8u-DI-LKF" id="3dk-wt-BzR"/>
+                        <outlet property="dominosCheckbox" destination="64t-CJ-f2m" id="ILf-M6-Oxv"/>
+                        <outlet property="pairOfDiceCheckbox" destination="kox-Bb-zRO" id="AMk-B9-Un6"/>
+                        <outlet property="playersSegment" destination="5ZA-aK-U9v" id="DsA-KD-R7F"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vlJ-FX-BOq" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

@@ -15,6 +15,8 @@ class FilterTableViewController: UIViewController, UITableViewDataSource, UITabl
     var gameData : GameData = GameData()
     var games : [Game] = []
     
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         

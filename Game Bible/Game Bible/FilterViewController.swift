@@ -11,9 +11,13 @@ import UIKit
 
 class FilterViewController: UIViewController {
     
-    @IBOutlet weak var optionsPicker: UIPickerView!
 
-    @IBOutlet weak var playersPicker: UIPickerView!
+    @IBOutlet weak var playersSegment: UISegmentedControl!
+    @IBOutlet weak var deckOfCardsCheckbox: BEMCheckBox!
+    @IBOutlet weak var pairOfDiceCheckbox: BEMCheckBox!
+    @IBOutlet weak var dominosCheckbox: BEMCheckBox!
+    @IBOutlet weak var difficultySegment: UISegmentedControl!
+    @IBOutlet weak var actionSegment: UISegmentedControl!
     
     var playersSelected = ""
     

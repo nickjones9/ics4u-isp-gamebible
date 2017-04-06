@@ -286,6 +286,9 @@
                                                     <segment title="5"/>
                                                     <segment title="5+"/>
                                                 </segments>
+                                                <connections>
+                                                    <action selector="playersChanged:" destination="oYA-El-oFf" eventType="valueChanged" id="jrN-le-1jv"/>
+                                                </connections>
                                             </segmentedControl>
                                         </subviews>
                                     </stackView>
@@ -403,6 +406,9 @@
                                                     <segment title="Hard"/>
                                                     <segment title="Any"/>
                                                 </segments>
+                                                <connections>
+                                                    <action selector="difficultyChanged:" destination="oYA-El-oFf" eventType="valueChanged" id="dhN-w1-wmL"/>
+                                                </connections>
                                             </segmentedControl>
                                         </subviews>
                                     </stackView>
@@ -423,6 +429,9 @@
                                                     <segment title="High"/>
                                                     <segment title="Any"/>
                                                 </segments>
+                                                <connections>
+                                                    <action selector="actionChanged:" destination="oYA-El-oFf" eventType="valueChanged" id="mLL-v4-Xbw"/>
+                                                </connections>
                                             </segmentedControl>
                                         </subviews>
                                     </stackView>
@@ -652,11 +661,11 @@
                                         <rect key="frame" x="0.0" y="28" width="375" height="80"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="BPM-fG-7Dw" id="32s-og-Can">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="79"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="79.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="auf-2y-Cd6">
-                                                    <rect key="frame" x="15" y="0.0" width="345" height="79"/>
+                                                    <rect key="frame" x="15" y="0.0" width="345" height="79.5"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
@@ -904,8 +913,8 @@
     </scenes>
     <resources>
         <image name="categories" width="30" height="30"/>
-        <image name="filter" width="30" height="30"/>
-        <image name="games" width="30" height="30"/>
+        <image name="filter" width="28" height="28"/>
+        <image name="games" width="28" height="28"/>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="nHp-zu-mBI"/>

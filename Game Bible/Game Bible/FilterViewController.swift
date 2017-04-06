@@ -60,4 +60,51 @@ class FilterViewController: UIViewController, BEMCheckBoxDelegate {
         
     }
     
+    @IBAction func playersChanged(_ sender: Any) {
+        switch playersSegment.selectedSegmentIndex {
+        case 0:
+            playersSelected = "1"
+        case 1:
+            playersSelected = "2"
+        case 2:
+            playersSelected = "3"
+        case 3:
+            playersSelected = "4"
+        case 4:
+            playersSelected = "5"
+        case 5:
+            playersSelected = "5+"
+        default:
+            playersSelected = "1"
+        }
+    }
+    @IBAction func difficultyChanged(_ sender: Any) {
+        switch difficultySegment.selectedSegmentIndex {
+        case 0:
+            difficultySelected = "easy"
+        case 1:
+            difficultySelected = "medium"
+        case 2:
+            difficultySelected = "hard"
+        case 3:
+            difficultySelected = "any"
+        default:
+            difficultySelected = "easy"
+        }
+
+    }
+    @IBAction func actionChanged(_ sender: Any) {
+        switch actionSegment.selectedSegmentIndex {
+        case 0:
+            actionSelected = "low"
+        case 1:
+            actionSelected = "medium"
+        case 2:
+            actionSelected = "high"
+        case 3:
+            actionSelected = "any"
+        default:
+            actionSelected = "low"
+        }
+    }
 }

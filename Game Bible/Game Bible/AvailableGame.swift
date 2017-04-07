@@ -1,14 +1,14 @@
 //
-//  game.swift
+//  AvailableGame.swift
 //  Game Bible
 //
-//  Created by Nicholas Jones on 2017-02-24.
+//  Created by Nicholas Jones on 2017-04-07.
 //  Copyright © 2017 Nicholas Jones. All rights reserved.
 //
 
 import Foundation
 
-class Game {
+class AvailableGame {
     var name = ""
     var players = ""
     var description = ""

@@ -122,6 +122,8 @@ class FilterViewController: UIViewController, BEMCheckBoxDelegate {
             destinationController.hasPairOfDice = self.hasPairOfDice
             destinationController.hasDeckOfCards = self.hasDeckOfCards
             
+            
+            
         }
     }
 }

@@ -16,7 +16,6 @@ class FilterTableViewCell: UITableViewCell {
     @IBOutlet weak var playersLabel: UILabel!
     @IBOutlet weak var materialsLabel: UILabel!
     
-    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
@@ -27,5 +26,5 @@ class FilterTableViewCell: UITableViewCell {
 
         // Configure the view for the selected state
     }
-
+    
 }

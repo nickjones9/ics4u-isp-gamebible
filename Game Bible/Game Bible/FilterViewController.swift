@@ -112,8 +112,8 @@ class FilterViewController: UIViewController, BEMCheckBoxDelegate {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         print("Browsing available games")
         
-        if segue.identifier == "showAvailableGameDetail" {
-                let destinationController = segue.destination as! FilterTableViewController
+        if segue.identifier == "showAvailableGames" {
+            let destinationController = segue.destination as! FilterTableViewController
             
             destinationController.playersSelected = self.playersSelected
             destinationController.difficultySelected = self.difficultySelected
@@ -121,9 +121,7 @@ class FilterViewController: UIViewController, BEMCheckBoxDelegate {
             destinationController.hasDominos = self.hasDominos
             destinationController.hasPairOfDice = self.hasPairOfDice
             destinationController.hasDeckOfCards = self.hasDeckOfCards
-
             
         }
-        
     }
 }

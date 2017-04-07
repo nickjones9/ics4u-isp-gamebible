@@ -441,7 +441,7 @@
                                             <color key="titleColor" red="0.82352941180000006" green="0.1960784314" blue="0.1960784314" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
                                         <connections>
-                                            <segue destination="Mqq-NS-DuU" kind="show" id="vId-mk-PU5"/>
+                                            <segue destination="Mqq-NS-DuU" kind="show" identifier="showAvailableGames" id="vId-mk-PU5"/>
                                         </connections>
                                     </button>
                                 </subviews>

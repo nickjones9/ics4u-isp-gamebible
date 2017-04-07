@@ -54,6 +54,11 @@ class FilterTableViewController: UIViewController, UITableViewDataSource, UITabl
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         
         // Return number of rows in section
+        // iterate over the array ... count elements that match filter criteria
+        var filtered = 0
+        for game in games {
+        }
+        
         return games.count
     }
     
@@ -61,10 +66,10 @@ class FilterTableViewController: UIViewController, UITableViewDataSource, UITabl
         let cellIdentifier = "Cell"
         let cell = tableView.dequeueReusableCell(withIdentifier: cellIdentifier, for: indexPath) as! GameTableViewCell
         
-        cell.nameLabel.text = games[indexPath.row].name
-        cell.thumbnailImageView.image = UIImage(named: games[indexPath.row].image)
-        cell.playersLabel.text = games[indexPath.row].players
-        cell.materialsLabel.text = games[indexPath.row].materials
+//        cell.nameLabel.text = games[indexPath.row].name
+//        cell.thumbnailImageView.image = UIImage(named: games[indexPath.row].image)
+//        cell.playersLabel.text = games[indexPath.row].players
+//        cell.materialsLabel.text = games[indexPath.row].materials
         
         return cell
     }

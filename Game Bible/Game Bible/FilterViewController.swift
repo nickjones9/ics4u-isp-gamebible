@@ -7,6 +7,8 @@
 //
 
 // Materials include... Card Deck, Shot Glasses, Solo Cups, TV, Coins, Quarters, Dice, Poker Chips, Pen, Beer Cans, Beer Bottels, Hard Alcohol, Beer Bong, Ping Pong Balls,
+
+
 import UIKit
 
 class FilterViewController: UIViewController, BEMCheckBoxDelegate {
@@ -19,14 +21,14 @@ class FilterViewController: UIViewController, BEMCheckBoxDelegate {
     @IBOutlet weak var difficultySegment: UISegmentedControl!
     @IBOutlet weak var actionSegment: UISegmentedControl!
     
-    var playersSelected = ""
+    var playersSelected = "1"
     
     var hasDeckOfCards = false
     var hasPairOfDice = false
     var hasDominos = false
     
-    var difficultySelected = ""
-    var actionSelected = ""
+    var difficultySelected = "easy"
+    var actionSelected = "low"
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -91,7 +93,6 @@ class FilterViewController: UIViewController, BEMCheckBoxDelegate {
         default:
             difficultySelected = "easy"
         }
-
     }
     @IBAction func actionChanged(_ sender: Any) {
         switch actionSegment.selectedSegmentIndex {
@@ -106,5 +107,23 @@ class FilterViewController: UIViewController, BEMCheckBoxDelegate {
         default:
             actionSelected = "low"
         }
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        print("Browsing available games")
+        
+        if segue.identifier == "showAvailableGameDetail" {
+                let destinationController = segue.destination as! FilterTableViewController
+            
+            destinationController.playersSelected = self.playersSelected
+            destinationController.difficultySelected = self.difficultySelected
+            destinationController.actionSelected = self.actionSelected
+            destinationController.hasDominos = self.hasDominos
+            destinationController.hasPairOfDice = self.hasPairOfDice
+            destinationController.hasDeckOfCards = self.hasDeckOfCards
+
+            
+        }
+        
     }
 }

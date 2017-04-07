@@ -540,7 +540,7 @@
                                             <outlet property="nameLabel" destination="Au5-mF-rK3" id="rbS-5U-a78"/>
                                             <outlet property="playersLabel" destination="fmp-89-Rag" id="5tI-26-BEc"/>
                                             <outlet property="thumbnailImageView" destination="dyB-0q-ace" id="mnQ-h7-G2h"/>
-                                            <segue destination="9QZ-L9-3TB" kind="show" identifier="showGameDetail" id="nHp-zu-mBI"/>
+                                            <segue destination="9QZ-L9-3TB" kind="show" identifier="showAvailableGameDetail" id="nHp-zu-mBI"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -609,7 +609,7 @@
         <scene sceneID="l6x-Bc-Mwc">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="yKg-5C-UHf" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Filter" image="filter" id="mdO-5v-qmn"/>
+                    <tabBarItem key="tabBarItem" title="Filter" image="filter" selectedImage="filterSelected" id="mdO-5v-qmn"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="w9k-J5-2PX">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
@@ -701,6 +701,7 @@
         <!--More-->
         <scene sceneID="z1k-kL-3Dg">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1l3-KG-SLH" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <tableViewController id="Ssf-Bh-0PR" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="6Yg-cs-yKd">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
@@ -723,7 +724,6 @@
                     </tableView>
                     <navigationItem key="navigationItem" title="More" id="7eh-U8-ler"/>
                 </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="1l3-KG-SLH" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3046" y="-1449"/>
         </scene>
@@ -748,16 +748,16 @@
         <scene sceneID="iXR-KG-ufw">
             <objects>
                 <tableViewController id="Cnf-vc-Rk4" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="tK4-HB-a53">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="80" sectionHeaderHeight="28" sectionFooterHeight="28" id="tK4-HB-a53">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="9DC-5D-dOa">
-                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="80" id="9DC-5D-dOa">
+                                <rect key="frame" x="0.0" y="28" width="375" height="80"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="9DC-5D-dOa" id="lgs-92-s3l">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="80"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                                 <connections>
@@ -895,7 +895,7 @@
         <scene sceneID="IVU-eR-rk7">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="ImF-dt-Ylt" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Games" image="games" id="oN1-79-G28"/>
+                    <tabBarItem key="tabBarItem" title="Games" image="games" selectedImage="gamesSelected" id="oN1-79-G28"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="XbK-Qs-sLc">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
@@ -914,7 +914,9 @@
     <resources>
         <image name="categories" width="30" height="30"/>
         <image name="filter" width="28" height="28"/>
+        <image name="filterSelected" width="28" height="28"/>
         <image name="games" width="28" height="28"/>
+        <image name="gamesSelected" width="28" height="28"/>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="nHp-zu-mBI"/>

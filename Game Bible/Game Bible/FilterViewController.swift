@@ -144,7 +144,7 @@ class FilterViewController: UIViewController, BEMCheckBoxDelegate {
                 print("The user has a deck of cards")
             }
             
-            var filteredGames = games.filter({$0.available == true})
+            let filteredGames = games.filter({$0.playersRequired == playersSelected && $0.difficulty == difficultySelected && $0.action == actionSelected && $0.deckOfCards == hasDeckOfCards && $0.pairOfDice == hasPairOfDice && $0.dominos == hasDominos})
             
             print(filteredGames)
             

@@ -21,6 +21,10 @@ class FilterViewController: UIViewController, BEMCheckBoxDelegate {
     @IBOutlet weak var difficultySegment: UISegmentedControl!
     @IBOutlet weak var actionSegment: UISegmentedControl!
     
+    var gameData : GameData = GameData()
+    var games : [Game] = []
+    var availableGames : [AvailableGame] = []
+    
     var playersSelected = "1"
     
     var hasDeckOfCards = false
@@ -33,7 +37,8 @@ class FilterViewController: UIViewController, BEMCheckBoxDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        // Do any additional setup after loading the view.
+        /// Make a new reference to the games data
+        games = gameData.games
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -121,9 +126,29 @@ class FilterViewController: UIViewController, BEMCheckBoxDelegate {
             destinationController.hasDominos = self.hasDominos
             destinationController.hasPairOfDice = self.hasPairOfDice
             destinationController.hasDeckOfCards = self.hasDeckOfCards
+
             
+            print("The user has \(playersSelected) players")
+  
+            print("The user selected \(difficultySelected) difficulty")
+
+            print("The user selected \(actionSelected) action")
+
+            if self.hasDominos == true {
+                print("The user has dominos")
+            }
+            if self.hasPairOfDice == true {
+                print("The user has a pair of dice")
+            }
+            if self.hasDeckOfCards == true {
+                print("The user has a deck of cards")
+            }
             
+            var filteredGames = games.filter({$0.available == true})
             
+            print(filteredGames)
+            
+            //destinationController.filteredGames = filteredGames
         }
     }
 }

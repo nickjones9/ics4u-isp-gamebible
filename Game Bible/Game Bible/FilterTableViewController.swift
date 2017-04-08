@@ -14,7 +14,7 @@ class FilterTableViewController: UIViewController, UITableViewDataSource, UITabl
     
     var gameData : GameData = GameData()
     var games : [Game] = []
-    var availableGames : [AvailableGame] = []
+    var filteredGames : [AvailableGame] = []
     
     var playersSelected = ""
     
@@ -56,26 +56,18 @@ class FilterTableViewController: UIViewController, UITableViewDataSource, UITabl
         
         // Return number of rows in section
         // iterate over the array ... count elements that match filter criteria
-        var availableCount = 0
-        for game in games {
-            if game.available == false {
-            availableCount += 1
-            }
-        }
 
-        return availableCount
+        return filteredGames.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cellIdentifier = "Cell"
         let cell = tableView.dequeueReusableCell(withIdentifier: cellIdentifier, for: indexPath) as! GameTableViewCell
         
-        
-        
-//        cell.nameLabel.text = availableGames[indexPath.row].name
-//        cell.thumbnailImageView.image = UIImage(named: availableGames[indexPath.row].image)
-//        cell.playersLabel.text = availableGames[indexPath.row].players
-//        cell.materialsLabel.text = availableGames[indexPath.row].materials
+        cell.nameLabel.text = filteredGames[indexPath.row].name
+        cell.thumbnailImageView.image = UIImage(named: filteredGames[indexPath.row].image)
+        cell.playersLabel.text = filteredGames[indexPath.row].players
+        cell.materialsLabel.text = filteredGames[indexPath.row].materials
         
         return cell
     }

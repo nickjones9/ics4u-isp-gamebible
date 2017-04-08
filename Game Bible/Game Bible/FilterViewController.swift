@@ -46,7 +46,6 @@ class FilterViewController: UIViewController, BEMCheckBoxDelegate {
         deckOfCardsCheckbox.delegate = self
         pairOfDiceCheckbox.delegate = self
         dominosCheckbox.delegate = self
-        deckOfCardsCheckbox.setOn(false, animated: false)
         
     }
     

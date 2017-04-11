@@ -12,16 +12,15 @@ class FilterTableViewController: UIViewController, UITableViewDataSource, UITabl
     
     @IBOutlet weak var tableView: UITableView!
     
+    // Reference other classes
     var gameData : GameData = GameData()
     var games : [Game] = []
     var filteredGames : [Game] = []
     
     var playersSelected : Int = 0
-    
     var hasDeckOfCards = false
     var hasPairOfDice = false
     var hasDominos = false
-    
     var difficultySelected : Int = 0
     var actionSelected : Int = 0
     
@@ -33,6 +32,7 @@ class FilterTableViewController: UIViewController, UITableViewDataSource, UITabl
     }
     
     override func viewDidAppear(_ animated: Bool) {
+        // Unselect the previously selected row
         if tableView.indexPathForSelectedRow != nil {
             tableView.deselectRow(at: tableView.indexPathForSelectedRow!, animated: true)
         }
@@ -40,10 +40,10 @@ class FilterTableViewController: UIViewController, UITableViewDataSource, UITabl
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        // Set a destination
         if segue.identifier == "showGameDetail" {
             if let indexPath = tableView.indexPathForSelectedRow {
                 let destinationController = segue.destination as! GameDetailViewController
@@ -53,10 +53,6 @@ class FilterTableViewController: UIViewController, UITableViewDataSource, UITabl
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        
-        // Return number of rows in section
-        // iterate over the array ... count elements that match filter criteria
-
         return filteredGames.count
     }
     
@@ -64,6 +60,7 @@ class FilterTableViewController: UIViewController, UITableViewDataSource, UITabl
         let cellIdentifier = "Cell"
         let cell = tableView.dequeueReusableCell(withIdentifier: cellIdentifier, for: indexPath) as! GameTableViewCell
         
+        // Update the cell content for each row that was returned from filter
         cell.nameLabel.text = filteredGames[indexPath.row].name
         cell.thumbnailImageView.image = UIImage(named: filteredGames[indexPath.row].image)
         cell.playersLabel.text = filteredGames[indexPath.row].players

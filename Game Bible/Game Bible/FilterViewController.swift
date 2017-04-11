@@ -130,6 +130,7 @@ class FilterViewController: UIViewController, BEMCheckBoxDelegate {
             var diceGames = games.filter({$0.pairOfDice == true})
             var dominoGames = games.filter({$0.dominos == true})
             
+            // Different selection scenario, four for each maerial
             if hasDeckOfCards == true && difficultySelected != 4 && actionSelected != 4 {
                 filteredGames += cardGames.filter({($0.playersRequired <= playersSelected) && ($0.difficulty == difficultySelected) && ($0.action == actionSelected)})
             } else if hasDeckOfCards == true && difficultySelected == 4 && actionSelected == 4 {

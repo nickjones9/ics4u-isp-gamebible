@@ -20,15 +20,15 @@ class FilterViewController: UIViewController, BEMCheckBoxDelegate {
     @IBOutlet weak var difficultySegment: UISegmentedControl!
     @IBOutlet weak var actionSegment: UISegmentedControl!
     
+    // Reference other classes
     var gameData : GameData = GameData()
     var games : [Game] = []
     
+    // Set the selected variables to their default
     var playersSelected = 1
-    
     var hasDeckOfCards = false
     var hasPairOfDice = false
     var hasDominos = false
-    
     var difficultySelected = 1
     var actionSelected = 1
     
@@ -40,16 +40,13 @@ class FilterViewController: UIViewController, BEMCheckBoxDelegate {
     }
     
     override func viewDidAppear(_ animated: Bool) {
-        
         deckOfCardsCheckbox.delegate = self
         pairOfDiceCheckbox.delegate = self
         dominosCheckbox.delegate = self
-        
     }
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
     
     override var prefersStatusBarHidden: Bool {
@@ -57,13 +54,13 @@ class FilterViewController: UIViewController, BEMCheckBoxDelegate {
     }
     
     func didTap(_ checkBox: BEMCheckBox) {
-        
+        // Update the variables when a box is tapped
         hasDeckOfCards = deckOfCardsCheckbox.on
         hasPairOfDice = pairOfDiceCheckbox.on
         hasDominos = dominosCheckbox.on
-        
     }
     
+    // Update the variables when a segement is updated
     @IBAction func playersChanged(_ sender: Any) {
         switch playersSegment.selectedSegmentIndex {
         case 0:
@@ -113,17 +110,22 @@ class FilterViewController: UIViewController, BEMCheckBoxDelegate {
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         
+        // Set a destination
         if segue.identifier == "showAvailableGames" {
             let destinationController = segue.destination as! FilterTableViewController
             
+            // Send the data
             destinationController.playersSelected = self.playersSelected
             destinationController.difficultySelected = self.difficultySelected
             destinationController.actionSelected = self.actionSelected
             destinationController.hasDominos = self.hasDominos
             destinationController.hasPairOfDice = self.hasPairOfDice
             destinationController.hasDeckOfCards = self.hasDeckOfCards
-
+            
+            // Create an empty array
             var filteredGames = [Game]()
+            
+            // Categorize by materials
             var cardGames = games.filter({$0.deckOfCards == true})
             var diceGames = games.filter({$0.pairOfDice == true})
             var dominoGames = games.filter({$0.dominos == true})

@@ -149,16 +149,12 @@ class FilterViewController: UIViewController, BEMCheckBoxDelegate {
             }
             
             if hasDominos == true && difficultySelected != 4 && actionSelected != 4 {
-                print(1)
                 filteredGames += dominoGames.filter({($0.playersRequired <= playersSelected) && ($0.difficulty == difficultySelected) && ($0.action == actionSelected)})
             } else if hasDominos == true && difficultySelected == 4 && actionSelected == 4 {
-                print(2)
                 filteredGames += dominoGames.filter({($0.playersRequired <= playersSelected) && ($0.action <= 3) && ($0.difficulty <= 3)})
             } else if hasDominos == true && difficultySelected != 4 && actionSelected == 4 {
-                print(3)
                 filteredGames += dominoGames.filter({($0.playersRequired <= playersSelected) && ($0.action <= 3) && ($0.difficulty == difficultySelected)})
             } else if hasDominos == true && difficultySelected == 4 && actionSelected != 4 {
-                print(4)
                 filteredGames += dominoGames.filter({($0.playersRequired <= playersSelected) && ($0.action == actionSelected) && ($0.difficulty <= 3)})
             }
             

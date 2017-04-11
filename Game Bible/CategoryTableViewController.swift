@@ -37,26 +37,4 @@ class CategoryTableViewController: UIViewController, UITableViewDataSource, UITa
         
         return cell
     }
-    
-    
-//    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-//        if segue.identifier == "showCategory" {
-//            if let indexPath = tableView.indexPathForSelectedRow {
-//                let destinationController = segue.destination as! ***GameDetailViewController
-//                destinationController.game = categories[indexPath.row]
-//            }
-//        }
-//    }
-//
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }

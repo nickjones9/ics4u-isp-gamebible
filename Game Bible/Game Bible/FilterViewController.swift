@@ -23,16 +23,15 @@ class FilterViewController: UIViewController, BEMCheckBoxDelegate {
     
     var gameData : GameData = GameData()
     var games : [Game] = []
-    var availableGames : [AvailableGame] = []
     
-    var playersSelected = "1"
+    var playersSelected = 1
     
     var hasDeckOfCards = false
     var hasPairOfDice = false
     var hasDominos = false
     
-    var difficultySelected = "easy"
-    var actionSelected = "low"
+    var difficultySelected = 1
+    var actionSelected = 1
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -69,52 +68,51 @@ class FilterViewController: UIViewController, BEMCheckBoxDelegate {
     @IBAction func playersChanged(_ sender: Any) {
         switch playersSegment.selectedSegmentIndex {
         case 0:
-            playersSelected = "1"
+            playersSelected = 1
         case 1:
-            playersSelected = "2"
+            playersSelected = 2
         case 2:
-            playersSelected = "3"
+            playersSelected = 3
         case 3:
-            playersSelected = "4"
+            playersSelected = 4
         case 4:
-            playersSelected = "5"
+            playersSelected = 5
         case 5:
-            playersSelected = "5+"
+            playersSelected = 6
         default:
-            playersSelected = "1"
+            playersSelected = 1
         }
     }
     @IBAction func difficultyChanged(_ sender: Any) {
         switch difficultySegment.selectedSegmentIndex {
         case 0:
-            difficultySelected = "easy"
+            difficultySelected = 1
         case 1:
-            difficultySelected = "medium"
+            difficultySelected = 2
         case 2:
-            difficultySelected = "hard"
+            difficultySelected = 3
         case 3:
-            difficultySelected = "any"
+            difficultySelected = 4
         default:
-            difficultySelected = "easy"
+            difficultySelected = 1
         }
     }
     @IBAction func actionChanged(_ sender: Any) {
         switch actionSegment.selectedSegmentIndex {
         case 0:
-            actionSelected = "low"
+            actionSelected = 1
         case 1:
-            actionSelected = "medium"
+            actionSelected = 2
         case 2:
-            actionSelected = "high"
+            actionSelected = 3
         case 3:
-            actionSelected = "any"
+            actionSelected = 4
         default:
-            actionSelected = "low"
+            actionSelected = 1
         }
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        print("Browsing available games")
         
         if segue.identifier == "showAvailableGames" {
             let destinationController = segue.destination as! FilterTableViewController
@@ -126,28 +124,60 @@ class FilterViewController: UIViewController, BEMCheckBoxDelegate {
             destinationController.hasPairOfDice = self.hasPairOfDice
             destinationController.hasDeckOfCards = self.hasDeckOfCards
 
+            var filteredGames = [Game]()
+            var cardGames = games.filter({$0.deckOfCards == true})
+            var diceGames = games.filter({$0.pairOfDice == true})
+            var dominoGames = games.filter({$0.dominos == true})
             
-            print("The user has \(playersSelected) players")
-  
-            print("The user selected \(difficultySelected) difficulty")
-
-            print("The user selected \(actionSelected) action")
-
-            if self.hasDominos == true {
-                print("The user has dominos")
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            if hasDeckOfCards == true && difficultySelected != 4 && actionSelected != 4 {
+                filteredGames += cardGames.filter({$0.playersRequired <= playersSelected && $0.difficulty == difficultySelected && $0.action == actionSelected})
+            } else if hasDeckOfCards == true && difficultySelected == 4 && actionSelected == 4 {
+                filteredGames += cardGames.filter({$0.playersRequired <= playersSelected && ($0.action == 1 || $0.action == 2 || $0.action == 3) && ($0.difficulty == 1 || $0.difficulty == 2 || $0.difficulty == 3)})
+            } else if hasDeckOfCards == true && difficultySelected != 4 && actionSelected == 4 {
+                filteredGames += cardGames.filter({$0.playersRequired <= playersSelected && ($0.action == 1 || $0.action == 2 || $0.action == 3) && $0.difficulty == difficultySelected})
+            } else if hasDeckOfCards == true && difficultySelected == 4 && actionSelected != 4 {
+                filteredGames += cardGames.filter({$0.playersRequired <= playersSelected && $0.action == actionSelected && ($0.difficulty == 1 || $0.difficulty == 2 || $0.difficulty == 3)})
             }
-            if self.hasPairOfDice == true {
-                print("The user has a pair of dice")
+            
+            if hasPairOfDice == true && difficultySelected != 4 && actionSelected != 4 {
+                filteredGames += diceGames.filter({$0.playersRequired <= playersSelected && $0.difficulty == difficultySelected && $0.action == actionSelected})
+            } else if hasDeckOfCards == true && difficultySelected == 4 && actionSelected == 4 {
+                filteredGames += diceGames.filter({$0.playersRequired <= playersSelected && $0.action == 1 || $0.action == 2 || $0.action == 3 && $0.difficulty == 1 || $0.difficulty == 2 || $0.difficulty == 3})
+            } else if hasDeckOfCards == true && difficultySelected != 4 && actionSelected == 4 {
+                filteredGames += diceGames.filter({$0.playersRequired <= playersSelected && $0.action == 1 || $0.action == 2 || $0.action == 3 && $0.difficulty == difficultySelected})
+            } else if hasDeckOfCards == true && difficultySelected == 4 && actionSelected != 4 {
+                filteredGames += diceGames.filter({$0.playersRequired <= playersSelected && $0.action == actionSelected && $0.difficulty == 1 || $0.difficulty == 2 || $0.difficulty == 3})
             }
-            if self.hasDeckOfCards == true {
-                print("The user has a deck of cards")
+            
+            if hasDominos == true && difficultySelected != 4 && actionSelected != 4 {
+                filteredGames += dominoGames.filter({$0.playersRequired <= playersSelected && $0.difficulty == difficultySelected && $0.action == actionSelected})
+            } else if hasDeckOfCards == true && difficultySelected == 4 && actionSelected == 4 {
+                filteredGames += dominoGames.filter({$0.playersRequired <= playersSelected && $0.action == 1 || $0.action == 2 || $0.action == 3 && $0.difficulty == 1 || $0.difficulty == 2 || $0.difficulty == 3})
+            } else if hasDeckOfCards == true && difficultySelected != 4 && actionSelected == 4 {
+                filteredGames += dominoGames.filter({$0.playersRequired <= playersSelected && $0.action == 1 || $0.action == 2 || $0.action == 3 && $0.difficulty == difficultySelected})
+            } else if hasDeckOfCards == true && difficultySelected == 4 && actionSelected != 4 {
+                filteredGames += dominoGames.filter({$0.playersRequired <= playersSelected && $0.action == actionSelected && $0.difficulty == 1 || $0.difficulty == 2 || $0.difficulty == 3})
             }
             
-            let filteredGames = games.filter({$0.playersRequired == playersSelected && $0.difficulty == difficultySelected && $0.action == actionSelected && $0.deckOfCards == hasDeckOfCards && $0.pairOfDice == hasPairOfDice && $0.dominos == hasDominos})
-            
-            print(filteredGames)
-            
-            //destinationController.filteredGames = filteredGames
+            destinationController.filteredGames = filteredGames
         }
     }
 }

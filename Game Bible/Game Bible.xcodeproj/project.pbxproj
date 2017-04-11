@@ -28,8 +28,6 @@
 		F62A28A81E75C14A00DF0805 /* CategoryTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F62A28A71E75C14A00DF0805 /* CategoryTableViewController.swift */; };
 		F66A119B1E8D344300616BA8 /* GameData.swift in Sources */ = {isa = PBXBuildFile; fileRef = F66A119A1E8D344300616BA8 /* GameData.swift */; };
 		F6AE9E221E622AFD00663261 /* GameTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6AE9E211E622AFD00663261 /* GameTableViewCell.swift */; };
-		F6AE9E241E6380ED00663261 /* HomeScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6AE9E231E6380ED00663261 /* HomeScreenViewController.swift */; };
-		F6C6D3621E98413100374A43 /* AvailableGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6C6D3611E98413100374A43 /* AvailableGame.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -61,8 +59,6 @@
 		F62A28A71E75C14A00DF0805 /* CategoryTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CategoryTableViewController.swift; path = ../CategoryTableViewController.swift; sourceTree = "<group>"; };
 		F66A119A1E8D344300616BA8 /* GameData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameData.swift; sourceTree = "<group>"; };
 		F6AE9E211E622AFD00663261 /* GameTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameTableViewCell.swift; sourceTree = "<group>"; };
-		F6AE9E231E6380ED00663261 /* HomeScreenViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeScreenViewController.swift; sourceTree = "<group>"; };
-		F6C6D3611E98413100374A43 /* AvailableGame.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AvailableGame.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,17 +112,15 @@
 				F60F4DCA1E51F761000594FD /* LaunchScreen.storyboard */,
 				F60F4DC81E51F761000594FD /* Assets.xcassets */,
 				F60F4DC11E51F761000594FD /* AppDelegate.swift */,
-				F6AE9E231E6380ED00663261 /* HomeScreenViewController.swift */,
-				F62A28A71E75C14A00DF0805 /* CategoryTableViewController.swift */,
 				F60F4DC31E51F761000594FD /* GameTableViewController.swift */,
 				F6AE9E211E622AFD00663261 /* GameTableViewCell.swift */,
 				F60E05481E5F819D004E3C45 /* GameDetailViewController.swift */,
 				F60E054C1E611FBF004E3C45 /* GameDetailTableViewCell.swift */,
+				F62A28A71E75C14A00DF0805 /* CategoryTableViewController.swift */,
 				F60CFF1E1E68E1B70045D6D7 /* FilterViewController.swift */,
 				F60E054A1E60B6CE004E3C45 /* FilterTableViewController.swift */,
 				F60CFF1C1E68DD930045D6D7 /* FilterTableViewCell.swift */,
 				F60E054E1E6128EE004E3C45 /* Game.swift */,
-				F6C6D3611E98413100374A43 /* AvailableGame.swift */,
 				F66A119A1E8D344300616BA8 /* GameData.swift */,
 				F60CFF241E6B34B70045D6D7 /* CheckMarkHeader.h */,
 				F60F4DCD1E51F761000594FD /* Info.plist */,
@@ -227,8 +221,6 @@
 				F60F4DC41E51F761000594FD /* GameTableViewController.swift in Sources */,
 				F66A119B1E8D344300616BA8 /* GameData.swift in Sources */,
 				F60CFF1F1E68E1B70045D6D7 /* FilterViewController.swift in Sources */,
-				F6AE9E241E6380ED00663261 /* HomeScreenViewController.swift in Sources */,
-				F6C6D3621E98413100374A43 /* AvailableGame.swift in Sources */,
 				F60E054F1E6128EE004E3C45 /* Game.swift in Sources */,
 				F60CFF311E6B37250045D6D7 /* BEMCheckBox.m in Sources */,
 				F60CFF321E6B37250045D6D7 /* BEMCheckBoxGroup.m in Sources */,

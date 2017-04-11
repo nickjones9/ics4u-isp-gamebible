@@ -15,14 +15,15 @@ class Game {
     var instructions = ""
     var materials = ""
     var image = ""
-    var playersRequired = ""
+    var playersRequired : Int
     var deckOfCards : Bool
     var pairOfDice : Bool
     var dominos : Bool
-    var difficulty = ""
-    var action = ""
+    var difficulty : Int
+    var action : Int
+    var favorite : Bool
     
-    init(name: String, players: String, description: String, instructions: String, materials: String, image: String, playersRequired: String, deckOfCards: Bool, pairOfDice: Bool, dominos: Bool, difficulty: String, action: String) {
+    init(name: String, players: String, description: String, instructions: String, materials: String, image: String, playersRequired: Int, deckOfCards: Bool, pairOfDice: Bool, dominos: Bool, difficulty: Int, action: Int, favorite: Bool) {
         self.name = name
         self.players = players
         self.description = description
@@ -35,5 +36,6 @@ class Game {
         self.dominos = dominos
         self.difficulty = difficulty
         self.action = action
+        self.favorite = favorite
     }
 }

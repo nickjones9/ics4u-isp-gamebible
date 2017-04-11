@@ -162,6 +162,15 @@ class FilterViewController: UIViewController, BEMCheckBoxDelegate {
             }
             
             destinationController.filteredGames = filteredGames
+            
+            if filteredGames.count == 0 {
+                
+                let alert = UIAlertController(title: "No Results", message: "There are no games that match your filter", preferredStyle: UIAlertControllerStyle.alert)
+                alert.addAction(UIAlertAction(title: "Click", style: UIAlertActionStyle.default, handler: nil))
+                self.present(alert, animated: true, completion: nil)
+                alert.view.tintColor = UIColor(red: 210.0/255.0, green: 50.0/255.0, blue: 50.0/255.0, alpha: 1.0)
+                
+            }
         }
     }
 }

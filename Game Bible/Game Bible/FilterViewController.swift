@@ -13,7 +13,6 @@ import UIKit
 
 class FilterViewController: UIViewController, BEMCheckBoxDelegate {
     
-    
     @IBOutlet weak var playersSegment: UISegmentedControl!
     @IBOutlet weak var deckOfCardsCheckbox: BEMCheckBox!
     @IBOutlet weak var pairOfDiceCheckbox: BEMCheckBox!
@@ -129,52 +128,38 @@ class FilterViewController: UIViewController, BEMCheckBoxDelegate {
             var diceGames = games.filter({$0.pairOfDice == true})
             var dominoGames = games.filter({$0.dominos == true})
             
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
             if hasDeckOfCards == true && difficultySelected != 4 && actionSelected != 4 {
-                filteredGames += cardGames.filter({$0.playersRequired <= playersSelected && $0.difficulty == difficultySelected && $0.action == actionSelected})
+                filteredGames += cardGames.filter({($0.playersRequired <= playersSelected) && ($0.difficulty == difficultySelected) && ($0.action == actionSelected)})
             } else if hasDeckOfCards == true && difficultySelected == 4 && actionSelected == 4 {
-                filteredGames += cardGames.filter({$0.playersRequired <= playersSelected && ($0.action == 1 || $0.action == 2 || $0.action == 3) && ($0.difficulty == 1 || $0.difficulty == 2 || $0.difficulty == 3)})
+                filteredGames += cardGames.filter({($0.playersRequired <= playersSelected) && ($0.action <= 3) && ($0.difficulty <= 3)})
             } else if hasDeckOfCards == true && difficultySelected != 4 && actionSelected == 4 {
-                filteredGames += cardGames.filter({$0.playersRequired <= playersSelected && ($0.action == 1 || $0.action == 2 || $0.action == 3) && $0.difficulty == difficultySelected})
+                filteredGames += cardGames.filter({($0.playersRequired <= playersSelected) && ($0.action <= 3) && ($0.difficulty == difficultySelected)})
             } else if hasDeckOfCards == true && difficultySelected == 4 && actionSelected != 4 {
-                filteredGames += cardGames.filter({$0.playersRequired <= playersSelected && $0.action == actionSelected && ($0.difficulty == 1 || $0.difficulty == 2 || $0.difficulty == 3)})
+                filteredGames += cardGames.filter({($0.playersRequired <= playersSelected) && ($0.action == actionSelected) && ($0.difficulty <= 3)})
             }
             
             if hasPairOfDice == true && difficultySelected != 4 && actionSelected != 4 {
-                filteredGames += diceGames.filter({$0.playersRequired <= playersSelected && $0.difficulty == difficultySelected && $0.action == actionSelected})
-            } else if hasDeckOfCards == true && difficultySelected == 4 && actionSelected == 4 {
-                filteredGames += diceGames.filter({$0.playersRequired <= playersSelected && $0.action == 1 || $0.action == 2 || $0.action == 3 && $0.difficulty == 1 || $0.difficulty == 2 || $0.difficulty == 3})
-            } else if hasDeckOfCards == true && difficultySelected != 4 && actionSelected == 4 {
-                filteredGames += diceGames.filter({$0.playersRequired <= playersSelected && $0.action == 1 || $0.action == 2 || $0.action == 3 && $0.difficulty == difficultySelected})
-            } else if hasDeckOfCards == true && difficultySelected == 4 && actionSelected != 4 {
-                filteredGames += diceGames.filter({$0.playersRequired <= playersSelected && $0.action == actionSelected && $0.difficulty == 1 || $0.difficulty == 2 || $0.difficulty == 3})
+                filteredGames += diceGames.filter({($0.playersRequired <= playersSelected) && ($0.difficulty == difficultySelected) && ($0.action == actionSelected)})
+            } else if hasPairOfDice == true && difficultySelected == 4 && actionSelected == 4 {
+                filteredGames += diceGames.filter({($0.playersRequired <= playersSelected) && ($0.action <= 3) && ($0.difficulty <= 3)})
+            } else if hasPairOfDice == true && difficultySelected != 4 && actionSelected == 4 {
+                filteredGames += diceGames.filter({($0.playersRequired <= playersSelected) && ($0.action <= 3) && ($0.difficulty == difficultySelected)})
+            } else if hasPairOfDice == true && difficultySelected == 4 && actionSelected != 4 {
+                filteredGames += diceGames.filter({($0.playersRequired <= playersSelected) && ($0.action == actionSelected) && ($0.difficulty <= 3)})
             }
             
             if hasDominos == true && difficultySelected != 4 && actionSelected != 4 {
-                filteredGames += dominoGames.filter({$0.playersRequired <= playersSelected && $0.difficulty == difficultySelected && $0.action == actionSelected})
-            } else if hasDeckOfCards == true && difficultySelected == 4 && actionSelected == 4 {
-                filteredGames += dominoGames.filter({$0.playersRequired <= playersSelected && $0.action == 1 || $0.action == 2 || $0.action == 3 && $0.difficulty == 1 || $0.difficulty == 2 || $0.difficulty == 3})
-            } else if hasDeckOfCards == true && difficultySelected != 4 && actionSelected == 4 {
-                filteredGames += dominoGames.filter({$0.playersRequired <= playersSelected && $0.action == 1 || $0.action == 2 || $0.action == 3 && $0.difficulty == difficultySelected})
-            } else if hasDeckOfCards == true && difficultySelected == 4 && actionSelected != 4 {
-                filteredGames += dominoGames.filter({$0.playersRequired <= playersSelected && $0.action == actionSelected && $0.difficulty == 1 || $0.difficulty == 2 || $0.difficulty == 3})
+                print(1)
+                filteredGames += dominoGames.filter({($0.playersRequired <= playersSelected) && ($0.difficulty == difficultySelected) && ($0.action == actionSelected)})
+            } else if hasDominos == true && difficultySelected == 4 && actionSelected == 4 {
+                print(2)
+                filteredGames += dominoGames.filter({($0.playersRequired <= playersSelected) && ($0.action <= 3) && ($0.difficulty <= 3)})
+            } else if hasDominos == true && difficultySelected != 4 && actionSelected == 4 {
+                print(3)
+                filteredGames += dominoGames.filter({($0.playersRequired <= playersSelected) && ($0.action <= 3) && ($0.difficulty == difficultySelected)})
+            } else if hasDominos == true && difficultySelected == 4 && actionSelected != 4 {
+                print(4)
+                filteredGames += dominoGames.filter({($0.playersRequired <= playersSelected) && ($0.action == actionSelected) && ($0.difficulty <= 3)})
             }
             
             destinationController.filteredGames = filteredGames

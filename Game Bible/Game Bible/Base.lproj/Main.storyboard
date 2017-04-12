@@ -487,7 +487,7 @@
                                             <outlet property="nameLabel" destination="Au5-mF-rK3" id="rbS-5U-a78"/>
                                             <outlet property="playersLabel" destination="fmp-89-Rag" id="5tI-26-BEc"/>
                                             <outlet property="thumbnailImageView" destination="dyB-0q-ace" id="mnQ-h7-G2h"/>
-                                            <segue destination="9QZ-L9-3TB" kind="show" identifier="showAvailableGameDetail" id="nHp-zu-mBI"/>
+                                            <segue destination="9QZ-L9-3TB" kind="show" identifier="showGameDetail" id="nHp-zu-mBI"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>

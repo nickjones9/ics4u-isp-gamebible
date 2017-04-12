@@ -60,6 +60,19 @@ class GameTableViewController: UIViewController, UITableViewDataSource, UITableV
         }
     }
     
+    func tableView(_ tableView: UITableView, editActionsForRowAt indexPath: IndexPath) -> [UITableViewRowAction]? {
+        
+        let favorite = UITableViewRowAction(style: .normal, title: "Favorite") { action, index in
+            self.games[indexPath.row].favorite = true
+        }
+        favorite.backgroundColor = UIColor.lightGray
+        return [favorite]
+    }
+    
+    func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
+        return true
+    }
+    
 //    func filterContent(for searchText: String) {
 //        searchResults = games.filter({(Game) -> Bool in if let name = games.name {
 //            let isMatch = name.localizedCaseInsensitiveContains(searchText)

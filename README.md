@@ -41,7 +41,7 @@ The search feature will be a key factor in this application. If the user wants t
 
 Almost every successful application available in the App Store has a multi-view user interface. I would like to be able to create my own multi- view applications, and the best way to learn is to do. So, this will be a sort of "template" and "guinea pig" for my future multi-view applications. 
 
-I have not yet found an application that is very similar to my idea. Honestly, I do not think this is a million-dollar app idea, but creating this app is more about learning than to creat the next big app. So, even if there was a similar application idea to mine, I would still be able to reach my goal. 
+I have not yet found an application that is very similar to my idea. Honestly, I do not think this is a million-dollar app idea, but creating this app is more about learning than to create the next big app. So, even if there was a similar application idea to mine, I would still be able to reach my goal. 
 
 ### What is your prior experience in this area?
 
@@ -60,6 +60,8 @@ As mentioned before, I was hoping this app could be a template for future apps. 
 *If you are writing a networked application, you might be using an API like Alamofire to simplify that part of the implementation. If you are writing an application that communicates over Bluetooth, you may be using the Core Bluetooth framework. Please list any expected dependencies for your project.*
 
 This app will depend on the database that I chose to use. The level of difficulty will vary depending on if the database will be internal or external to the application.
+
+NOTE from Mr. Gordon: You will need to make use of the FMDB library. You can remove my comment and add to your paragraph above. You can use the example app we wrote earlier this year as a starting point for having the FMDB library integrated into an application.
 
 
 ### Rate the personal difficulty level of this project.
@@ -80,6 +82,6 @@ The home screen is what the user will be shown when the app is opened. They will
 
 ![Home](https://github.com/rsgc-jones-n/ics4u-isp-gamebible/blob/master/Game%20Bible/Home%20&%20Browse.png?raw=true)
 
-After the user selects a game they would like to open, a gave view will be displayed customised to the game rhey selected. the game view will include the required materials and players, a discriptiom of the game, the rules and possibly other features like a video explaination etc. All of these different views will have back buttons so that the user will be able to easily navigate through the pages. 
+After the user selects a game they would like to open, a gave view will be displayed customised to the game they selected. The game view will include the required materials and players, a discriptiom of the game, the rules and possibly other features like a video explaination etc. All of these different views will have back buttons so that the user will be able to easily navigate through the pages. 
 
 ![Game](https://github.com/rsgc-jones-n/ics4u-isp-gamebible/blob/master/Game%20Bible/Game.png?raw=true)
